@@ -45,3 +45,8 @@ create table tb_review (
 	likes INT,
 	constraint review_pkey primary key (user_id,resto_id)
 );
+
+alter table tb_review drop column upvote, drop column downvote;
+alter table tb_review add column vote INT;
+alter table tb_resto add column upvotes BIGINT, add column downvotes BIGINT;
+
