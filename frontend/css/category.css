@@ -18,16 +18,16 @@ body {
 .navbar-nav #Beranda {
     margin-left: 10px;
     margin-right: 10px;
-    font-weight: 900;
-    color: #DD3131;
+    font-weight: 700;
+    color: #000000;
 }
 .navbar-nav #Kategori {
     margin-left: 10px;
     margin-right: 10px;
     padding-right: 30px;
     border-right: 2px solid silver;
-    font-weight: 700;
-    color: #000000;
+    font-weight: 900;
+    color: #DD3131;
 }
 .navbar-nav #SignUp {
     margin-left: 10px;
@@ -52,7 +52,7 @@ body {
 
 /* Cover */
 .jumbotron {
-    background-image: url(img/bgimage.png);
+    background-image: url(../img/jumbotron.png);
     background-size: cover;
     filter: brightness(100%);
     height: 500px;
@@ -120,106 +120,51 @@ body {
 .main-title {
     font-size: 40px;
     font-weight: 900;
+    margin-bottom: 30px;
 }
-.card-product-list,
-.card-product-grid {
-    margin-bottom: 0
-}
-.card {
-    width: 400px;
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-color: #fff;
-    background-clip: border-box;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
-    margin-top: 50px
-}
-.card-product-grid:hover {
-    -webkit-box-shadow: 0 4px 15px rgba(153, 153, 153, 0.3);
-    box-shadow: 0 4px 15px rgba(153, 153, 153, 0.3);
-    -webkit-transition: .3s;
-    transition: .3s
-}
-.card-product-grid .img-wrap {
-    border-radius: 1.2rem 1.2rem 0 0;
-    height: 220px
-}
-.card .img-wrap {
-    overflow: hidden
-}
-.card-lg .img-wrap {
-    height: 280px
-}
-[class*='card-product'] .img-wrap img {
-    height: 100%;
-    max-width: 100%;
-    width: auto;
-    display: inline-block;
-    -o-object-fit: cover;
-    object-fit: cover
-}
-.img-wrap {
-    text-align: center;
-    display: block
-}
-.card-product-grid .info-wrap {
+.profile-card {
+    max-width: 295px;
+    background-color: #FFF;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    background-position: center;
     overflow: hidden;
-    padding: 18px 20px
-}
-[class*='card-product'] a.title {
-    color: #212529;
-    display: block
-}
-.info-wrap .title {
-    font-weight: 700;
-    font-size: 28px;
-    text-decoration: none;
-}
-.heart1 {
-    width: 110px;
-    height: 110px;
     position: relative;
-    top: 22%;
-    transform: translate(-50%, -50%);
-    background: url(heart.png) no-repeat;
-    background-position: 0 0;
+    margin: 22px auto;
     cursor: pointer;
+    border-radius: 17px;
 }
-.heart-line {
-    background-position: -2800px 0;
-    transition: background 1s steps(28);
+.profile-card img {
+    transition: all linear 0.25s;
 }
-.card-product-grid .bottom-wrap {
-    text-align: right;
-    padding: 18px;
-    border-top: 1px solid #e4e4e4
+.profile-card .profile-name {
+    position: absolute;
+    height: 100px;
+    background-color: black;
+    opacity: 0.5;
+    bottom: -30px;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    transition: all linear 0.25s;
 }
-.rating, .address {
-    margin-top: 5px;
-    font-size: 16px;
+.profile-card .title {
+    bottom: 15px;
+    left: 25px;
+    position: absolute;
+    opacity: 1.0;
+    font-size: 30px;
+    color: #FFF;
+    transition: all linear 0.25s;
 }
-.rating .bi {
-    padding-right: 0.4em;
-    color: #FF9900
+.profile-card:hover {
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 }
-.address .bi {
-    padding-right: 0.4em;
-    color:#24923D
+.profile-card img:hover {
+    filter: grayscale(80%);
 }
-.bottom-wrap .review {
-    padding-right: 1em;
-    text-decoration: underline;
-    font-weight: 700;
-    color: #DD3131;
+.profile-card:hover .profile-name {
+    bottom: 0px;
+}
+.profile-card:hover .title {
+    bottom: 45px;
 }
 
 /* Footer */

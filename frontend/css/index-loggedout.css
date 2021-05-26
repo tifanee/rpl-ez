@@ -29,34 +29,30 @@ body {
     font-weight: 700;
     color: #000000;
 }
-.navbar-nav #navbarDropdownMenuLink {
-    text-decoration: underline;
+.navbar-nav #SignUp {
     margin-left: 10px;
     margin-right: 10px;
-    font-weight: 900;
-    color: #000000;
-}
-.navbar-nav #Photo img {
-    clip-path: circle();
-    border-radius: 50%;
-    height: 50px;
-    margin-bottom: -20px;
-    margin-top: -25px;
-}
-.navbar-nav .dropdown-item {
-    font-size: 17px;
     font-weight: 700;
-}
-.navbar-nav .exit {
     color: #DD3131;
 }
-.navbar-nav .dropdown-item:hover {
-    background-color: pink;
+.navbar-nav #SignIn {
+    background-color: #DD3131;
+    border: none;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: 700;
+    font-size: 19px;
+}
+.navbar-nav #SignIn:hover {
+    background-color: #750909;
 }
 
 /* Cover */
 .jumbotron {
-    background-image: url(img/bgimage.png);
+    background-image: url(../img/jumbotron.png);
     background-size: cover;
     filter: brightness(100%);
     height: 500px;
@@ -168,8 +164,12 @@ body {
     max-width: 100%;
     width: auto;
     display: inline-block;
+    transition: transform .2s;
     -o-object-fit: cover;
     object-fit: cover
+}
+[class*='card-product'] .img-wrap img:hover {
+    transform: scale(1.08);
 }
 .img-wrap {
     text-align: center;
@@ -194,7 +194,7 @@ body {
     position: relative;
     top: 22%;
     transform: translate(-50%, -50%);
-    background: url(heart.png) no-repeat;
+    background: url(../img/heart.png) no-repeat;
     background-position: 0 0;
     cursor: pointer;
 }
