@@ -1,0 +1,166 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  background-image: url("../img/background.png");
+  background-size: cover;
+  background-position: center center;
+}
+
+.container-form {
+  float: right;
+  width: 550px;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 40px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  margin-right: 80px;
+  text-align: left;
+  font-family: "Lato", sans-serif;
+}
+.container-form img {
+  display: block;
+  margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+}
+.container-form h1 {
+  margin-left: 16px;
+  font-size: 30px;
+}
+.container-form h3 {
+  font-size: 18px;
+  margin-left: 16px;
+  margin-bottom: 8px;
+}
+
+.isian-form {
+  border-radius: 5px;
+  padding: 8px 16px;
+  margin-left: 16px;
+  margin-bottom: 16px;
+  width: 484px;
+  height: 25px;
+  border: 0px solid;
+  outline: none;
+  font-size: 14px;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+}
+
+.isian-form#deskripsi {
+  border-radius: 5px;
+  padding: 8px 16px;
+  margin-left: 16px;
+  margin-bottom: 16px;
+  width: 484px;
+  height: 100px;
+  border: 0px solid;
+  outline: none;
+  font-size: 14px;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+}
+.isian-form-jambuka {
+  border-radius: 5px;
+  padding: 8px 16px;
+  margin-left: 16px;
+  margin-bottom: 16px;
+  width: 200px;
+  height: 25px;
+  border: 0px solid;
+  outline: none;
+  font-size: 14px;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+}
+label[for="isian-form-jambuka"] {
+  font-size: 16px;
+  font-weight: 700;
+  margin-left: 16px;
+  margin-bottom: 8px;
+}
+.foto-resto {
+  background-color: white;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+  padding: 16px;
+  border-radius: 5px;
+  margin-left: 18px;
+  margin-bottom: 16px;
+  width: 482px;
+  height: 20px;
+}
+.select select {
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+  font-size: 14px;
+  color: rgb(109, 109, 109);
+  border-radius: 5px;
+  padding: 8px 16px;
+  margin-left: 16px;
+  margin-bottom: 16px;
+  width: 516px;
+  height: 40px;
+}
+.inputmenu {
+  background-color: white;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+  padding: 16px;
+  border-radius: 5px;
+  margin-left: 18px;
+  margin-bottom: 16px;
+  width: 482px;
+  height: 20px;
+}
+.button-submit {
+  color: white;
+  background-color: #dd3131;
+  width: 516px;
+  height: 40px;
+  padding: 8px 8px;
+  margin-top: 14px;
+  margin-left: 16px;
+  margin-bottom: 16px;
+  border: 0px solid;
+  border-radius: 5px;
+  outline: none;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.button-submit:hover {
+  background-color: #750909;
+}
+.ezeats {
+  float: left;
+  width: 450px;
+  padding: 0px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  margin-left: 80px;
+  text-align: left;
+  font-family: "Lato", sans-serif;
+}
+.ezeats img {
+  width: 350px;
+  margin-left: 32px;
+}
+.ezeats h1 {
+  color: white;
+  margin-left: 32px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-size: 30px;
+  font-weight: 800;
+  text-align: center;
+}
+.ezeats h2 {
+  color: white;
+  text-decoration: underline;
+  outline-width: 2px;
+  margin-left: 32px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-size: 30px;
+  font-weight: 800;
+  text-align: center;
+}
