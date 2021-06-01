@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Lato", sans-serif;
-  background-image: url("../asset/begron.png");
+  background-image: url("../img/background.png");
   background-size: cover;
   background-position: center;
 }
