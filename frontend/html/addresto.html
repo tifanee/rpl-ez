@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tambah Resto</title>
+    <link rel="stylesheet" href="../css/addresto.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="ezeats">
+      <br /><br /><br /><br />
+      <h1>Restoran kesayanganmu belum ada di EzEats?</h1>
+      <h2>Tambah Sekarang!</h2>
+    </div>
+    <div class="container-form">
+      <form>
+        <img src="../img/logo ezeats red.png" />
+        <h3>Detail Restoran</h3>
+        <input
+          type="text"
+          class="isian-form"
+          id="namaresto"
+          placeholder="Nama Restoran"
+          required
+        />
+        <input
+          type="tel"
+          class="isian-form"
+          id="notelpon"
+          placeholder="No. Telepon"
+          required
+        />
+        <div class="select">
+          <select name="kategori" id="kategori">
+            <option selected disabled>Kategori Resto</option>
+            <option value="Japanese">Japanese</option>
+            <option value="Chicken">Chicken</option>
+            <option value="Indonesian">Indonesian</option>
+            <option value="Fast-Food">Fast Food</option>
+            <option value="Noodles">Noodles</option>
+            <option value="Drinks">Drinks</option>
+            <option value="Korean">Korean</option>
+          </select>
+        </div>
+        <input
+          class="isian-form-jambuka"
+          type="time"
+          id="jambuka"
+          name="jambuka"
+          min="00:00"
+          max="23:59"
+          required
+        />
+        <label for="isian-form-jambuka">Waktu Buka</label>
+        <input
+          class="isian-form-jambuka"
+          type="time"
+          id="jambuka"
+          name="jambuka"
+          min="00:00"
+          max="23:59"
+          required
+        />
+        <label for="isian-form-jambuka">Waktu Tutup</label>
+        <input
+          type="text"
+          class="isian-form"
+          id="fasilitas"
+          placeholder="Fasilitas"
+          required
+        />
+
+        <input
+          type="text"
+          class="isian-form"
+          id="harga"
+          placeholder="Harga, eg: IDR 100.000 - 150.000"
+          required
+        />
+        <input
+          type="text"
+          class="isian-form"
+          id="deskripsi"
+          placeholder="Deskripsi"
+        />
+        <h3>Foto Restoran</h3>
+        <input
+          type="file"
+          class="foto-resto"
+          id="file"
+          accept="image/"
+          multiple
+        />
+        <h3>Foto Menu</h3>
+        <div class="inputmenu">
+          <input
+            type="file"
+            class="foto-menu"
+            id="file"
+            accept="image/"
+            multiple
+          />
+        </div>
+        <h3>Alamat</h3>
+        <input
+          type="text"
+          class="isian-form"
+          id="namajalanresto"
+          placeholder="Nama Jalan"
+        />
+        <div class="select">
+          <select name="kategori" id="kategori">
+            <option selected disabled>Kota/Kabupaten</option>
+            <option value="Kota">Kota</option>
+            <option value="Kabupaten">Kabupaten</option>
+          </select>
+        </div>
+        <input
+          type="text"
+          class="isian-form"
+          id="kotaresto"
+          placeholder="Nama Kota/Kabupaten"
+        />
+        <br />
+        <button type="button" class="button-submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
