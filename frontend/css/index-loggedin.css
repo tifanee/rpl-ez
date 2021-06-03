@@ -30,10 +30,9 @@ body {
     color: #000000;
 }
 .navbar-nav #navbarDropdownMenuLink {
-    text-decoration: underline;
     margin-left: 10px;
     margin-right: 10px;
-    font-weight: 900;
+    font-weight: 400;
     color: #000000;
 }
 .navbar-nav #Photo img {
@@ -168,8 +167,12 @@ body {
     max-width: 100%;
     width: auto;
     display: inline-block;
+    transition: transform .2s;
     -o-object-fit: cover;
     object-fit: cover
+}
+[class*='card-product'] .img-wrap img:hover {
+    transform: scale(1.08);
 }
 .img-wrap {
     text-align: center;

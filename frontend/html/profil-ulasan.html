@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.35">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>
+  <link rel="stylesheet" type="text/css" href="../css/profil-ulasan.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,1200" />
+  <title>Park Ji-hyo - EzEats</title>
+</head>
+
+<body>
+  <!--Start of Navigation Bar-->
+  <div class="container-fluid" id="NavBar">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand toplogo" href="index-loggedin.html"><img src="../img/logo ezeats red.png" alt="EzEats"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <form class="d-inline-flex flex-fill justify-content-center align-items-center searchbar">
+            <input class="form-control me-2 inputbox" type="search" placeholder="Mau makan apa hari ini?"
+              aria-label="Search">
+            <button class="btn btn-outline-danger" type="submit"><i class="bi bi-search "></i></button>
+          </form>
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link" id="Photo" href="#"><img src="../img/Tzuyu.png" alt="Chou Tzu-yu"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Halo, Tzu-yu!
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="profil-edit.html">Profil</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item exit" href="index-loggedout.html">Keluar</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!--End of Navigation Bar-->
+  <br><br>
+
+  <!--Start of Profile-->
+  <div class="container profile">
+    <div class="profile-header">
+      <div class="images-header">
+        <img class="profile-cover" src="../img/twice-wide.jpg" alt="Fast Food Cover">
+        <img class="profile-image" src="../img/Tzuyu.png" alt="McDonalds Dramaga">
+        <img class="profile-image-bg" src="../img/white.jpg" alt="">
+      </div>
+      <h2 class="resto-name">Chou Tzu-yu</h2>
+      <h3 class="resto-rate">Fancy Foodie, Entertainer</h3>
+      <h3 class="resto-review"><strong>94</strong> Penilaian<strong><i class="bi bi-dot"></i>75</strong> Ulasan</h3>
+      <br><br><br>
+    </div>
+
+    <div class="profile-body">
+      <div class="row">
+        <div class="col-3">
+          <div class="sidebar edit-profile"><a href="profil-edit.html">Edit Profil</a></div>
+          <div class="sidebar activities"><span class="active">Aktivitas</span> 
+            <div class="items user-recently"><a href="">Baru Dilihat</a></div>
+            <div class="items user-ratings"><a href="">Penilaian</a></div>
+            <div class="items last user-reviews active"><a href="#">Ulasan</a></div>           
+          </div>
+          <div class="sidebar collection"><span class="">Koleksi Saya</span>
+            <div class="items favorite-resto"><a href="">Favorit</a></div>
+            <div class="items last black-listed"><a href="">Daftar Hitam</a></div>
+          </div>
+        </div>
+        <div class="col-9">
+          <div class="cards">
+
+            <div class="card">
+              <div class="card-head">
+                <div class="row">                  
+                  <div class="col-md-7 resto">
+                    <img src="../img/mcd.jpg" alt="">
+                    <span class="title">
+                      <div class="resto-name"><a href="info-loggedin.html">McDonald’s Dramaga</a></div>
+                      <div class="resto-address"><i class="bi bi-geo-alt"></i>Dramaga, Kab. Bogor</div>
+                    </span>
+                  </div>
+                  <div class="col-md-5 rating" id="bad">
+                    <span class="icon"><i class="bi bi-hand-thumbs-down"></i></span>
+                    <span class="info">Tidak Merekomendasikan</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">                
+                <div class="subject">Rasanya kayak Ketek Gorila</div>
+                <div class="detail">
+                  <p>
+                    Ga enak banget rasanya. Ayamnya masih bau amis. Air putihnya bau
+                    comberan. Harganya mahal. Nyesel jauh-jauh datang dari Korea
+                    yang ada disuguhin makanan se-engga enak ini! Balikin duit dan
+                    waktu gua, Gak mau tau!! >:(
+                  </p>
+                </div>                    
+              </div> 
+              <div class="card-bottom">
+                <div class="row justify-content-between">
+                  <div class="col-md-5 timestamp">14.07 10/05/2021</div>  
+                  <div class="col-md-5 voter-info"><strong>447</strong> dari <strong>512</strong> Voter Terbantu</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-head">
+                <div class="row">                  
+                  <div class="col-md-7 resto">
+                    <img src="../img/susu-darmi.jpg" alt="">
+                    <span class="title">
+                      <div class="resto-name"><a href="info-loggedin.html">Susu Mbok Darmi</a></div>
+                      <div class="resto-address"><i class="bi bi-geo-alt"></i>Dramaga, Kab. Bogor</div>
+                    </span>
+                  </div>
+                  <div class="col-md-5 rating" id="good">
+                    <span class="icon"><i class="bi bi-hand-thumbs-up"></i></span>
+                    <span class="info">Merekomendasikan</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">                
+                <div class="subject">Seger Bangett!</div>
+                <div class="detail">
+                  <p>
+                    Pokoknya seger banget minum susu ini. Apalagi kalo abis manggung,
+                    capek banget kan tuh.. Haus banget juga. Kalo minum susu ini, 
+                    energi tu seolah terisi lagi. Varian rasanya juga banyak, jadi kita 
+                    engga akan gampang bosen. Gudjob deh pokoknya.
+                  </p>
+                </div>                    
+              </div> 
+              <div class="card-bottom">
+                <div class="row justify-content-between">
+                  <div class="col-md-5 timestamp">12.58 02/05/2021</div>  
+                  <div class="col-md-5 voter-info"><strong>197</strong> dari <strong>224</strong> Voter Terbantu</div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="card">
+              <div class="card-head">
+                <div class="row">                  
+                  <div class="col-md-7 resto">
+                    <img src="../img/rm-sederhana.jpg" alt="">
+                    <span class="title">
+                      <div class="resto-name"><a href="info-loggedin.html">Rumah Makan Sederhana</a></div>
+                      <div class="resto-address"><i class="bi bi-geo-alt"></i>Bogor Tengah, Kota Bogor</div>
+                    </span>
+                  </div>
+                  <div class="col-md-5 rating" id="good">
+                    <span class="icon"><i class="bi bi-hand-thumbs-up"></i></span>
+                    <span class="info">Merekomendasikan</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">                
+                <div class="subject">Karinya Creamy Parah</div>
+                <div class="detail">
+                  <p>
+                    Sejauh ini Resto Padang favorit sih di sini. Ada menu sehatnya juga,
+                    walau mungkin engga seenak masakan Padang yang dimasak secara biasa.
+                    Tapi ya lumayan lah, hitung-hitung jaga kesehatan juga kan. Dari harga
+                    sih standar-standar aja buat aku. Pokoknya engga akan nyesel deh kalo
+                    makan di sini. Pelayannya ramah-ramah dan jago bahasa Inggris :)
+                  </p>
+                </div>                    
+              </div> 
+              <div class="card-bottom">
+                <div class="row justify-content-between">
+                  <div class="col-md-5 timestamp">09.50 26/04/2021</div>  
+                  <div class="col-md-5 voter-info"><strong>85</strong> dari <strong>110</strong> Voter Terbantu</div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+      
+  </div>
+  <!--End of Restaurant Info-->
+
+  
+  <!-- Start of Footer-->
+  <footer>
+    <div class="container-fluid" id="footer">
+      <div class="container pt-5 pb-5">
+        <div class="row">
+          <div class="col-xl-5 p-3 about-us">
+            <h2>Tentang EzEats</h2>
+              <p> EzEats adalah aplikasi berbasis web yang diharapkan dapat membantu masyarakat, 
+                  khususnya foodhunter untuk saling berinteraksi satu sama lain dengan bertukar 
+                  informasi mengenai penilaian ataupun ulasan terhadap sebuah rumah makan.
+              </p>
+              <p><strong>EzEats Team</strong></p>
+          </div>
+          <div class="col-xl-3 p-3 contact-us">
+            <h2>Kontak</h2>
+            <ul class="list-unstyled mb-1">
+              <li>
+                <div class="contact"><i class="bi bi-geo-alt-fill"></i> Jl. Raya Padjadjaran No.37, Bogor</div>
+              </li>
+              <li>
+                <div class="contact"><i class="bi bi-telephone-inbound-fill"></i> Phone: +62 812 3456 7890</div>
+              </li>
+              <li>
+                <div class="contact"><i class="bi bi-envelope-fill"></i> ezeats-team@company.co.id</div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xl-3 p-3 follow-us">
+            <h2>Ikuti Kami</h2>
+            <section class="mb-4 socmed-icon">
+              <!-- Facebook -->
+              <a class="btn btn-primary rounded-circle m-1" href="#!" role="button"><i class="bi bi-facebook"></i></a>
+
+              <!-- Twitter -->
+              <a class="btn btn-primary rounded-circle m-1" href="#!" role="button"><i class="bi bi-twitter"></i></a>
+
+              <!-- Instagram -->
+              <a class="btn btn-primary rounded-circle m-1" href="#!" role="button"><i class="bi bi-instagram"></i></a>
+
+              <!-- Github -->
+              <a class="btn btn-primary rounded-circle m-1" href="#!" role="button"><i class="bi bi-github"></i></a>
+            </section>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End of Footer-->
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+
+</html>
