@@ -1,470 +1,469 @@
 body {
-    font-family: Lato;
-    background-color: #EEEEEE;
+  font-family: Lato;
+  background-color: #eeeeee;
 }
 
 /* Navigation Bar */
 /* #region */
 .toplogo img {
-    max-height: 60px;
-    max-width: auto; 
+  max-height: 60px;
+  max-width: auto;
 }
 #NavBar {
-    background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 .navbar-nav {
-    font-family: Lato;
-    font-size: 19px;
+  font-family: Lato;
+  font-size: 19px;
 }
 .navbar-nav #navbarDropdownMenuLink {
-    margin-left: 10px;
-    margin-right: 10px;
-    font-weight: 400;
-    color: #000000;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-weight: 400;
+  color: #000000;
 }
 .navbar-nav #Photo img {
-    clip-path: circle();
-    border-radius: 50%;
-    height: 50px;
-    margin-bottom: -20px;
-    margin-top: -25px;
+  clip-path: circle();
+  border-radius: 50%;
+  height: 50px;
+  margin-bottom: -20px;
+  margin-top: -25px;
 }
 .navbar-nav .dropdown-item {
-    font-size: 17px;
-    font-weight: 700;
+  font-size: 17px;
+  font-weight: 700;
 }
 .navbar-nav .exit {
-    color: #DD3131;
+  color: #dd3131;
 }
 .navbar-nav .dropdown-item:hover {
-    background-color: pink;
+  background-color: pink;
 }
 #NavBar .searchbar .inputbox {
-    width: 525px;
-    height: 47px;
-    font-size: 1.18em;
-    font-weight: 700;
-    padding-right: 53.5px;
+  width: 525px;
+  height: 47px;
+  font-size: 1.18em;
+  font-weight: 700;
+  padding-right: 53.5px;
 }
 #NavBar .searchbar .inputbox:focus {
-    box-shadow: none;
-    border: 2px solid #DD3131
+  box-shadow: none;
+  border: 2px solid #dd3131;
 }
 #NavBar .searchbar .btn {
-    margin-left: -53.5px;
-    height: 47px;
-    font-size: 1.18em;
-    font-weight: 700;
+  margin-left: -53.5px;
+  height: 47px;
+  font-size: 1.18em;
+  font-weight: 700;
 }
 /* #endregion */
 
 /* Restaurant Info */
 /* #region */
 .info {
-    margin-top: -48px;
+  margin-top: -48px;
 }
 .info .info-header {
-    position: relative;
-    background-color: #FFFFFF;
-    z-index: -2;
+  position: relative;
+  background-color: #ffffff;
+  z-index: -2;
 }
 .info .images-header .resto-cover {
-    object-fit: cover;
-    position: relative;
-    width: 100%;
-    height: 400px;
-    filter: brightness(40%);
-    z-index: -1;
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+  height: 400px;
+  filter: brightness(40%);
+  z-index: -1;
 }
 .info .images-header .resto-image {
-    width: 33%;
-    display: block;
-    margin: -200px auto 0;
-    border: solid #FFFFFF 5px;
-    border-radius: 15px;
+  width: 33%;
+  display: block;
+  margin: -200px auto 0;
+  border: solid #ffffff 5px;
+  border-radius: 15px;
 }
 .info strong {
-    font-weight: 800;
+  font-weight: 800;
 }
 .info h2 {
-    text-align: center;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    font-weight: 800;
-    font-size: 35px;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-weight: 800;
+  font-size: 35px;
 }
 .info h3 {
-    text-align: center;
-    font-size: 20px;
+  text-align: center;
+  font-size: 20px;
 }
 .info h3 .rating {
-    margin-left: 2px;
-    font-weight: 900;
-    color: #24923D;
+  margin-left: 2px;
+  font-weight: 900;
+  color: #24923d;
 }
 .info .info-body {
-    position: relative;
-    background-color: #FFFFFF;
-    margin-top: 20px;
+  position: relative;
+  background-color: #ffffff;
+  margin-top: 20px;
 }
 .info .info-body .nav-tabs {
-    margin: 0px 20px 0px 20px;
+  margin: 0px 20px 0px 20px;
 }
 .info .info-body .nav-tabs .nav-link {
-    font-size: 20px;
-    font-weight: 600;
-    margin-top: 15px;
-    margin-right: 5px;
-    padding: 10px 30px 10px 30px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 15px;
+  margin-right: 5px;
+  padding: 10px 30px 10px 30px;
 }
 .info .info-body .nav-tabs .active {
-    border-top: 2px solid #DD3131;
-    border-left: 2px solid #DD3131;
-    border-right: 2px solid #DD3131;
-    border-bottom: 2px solid #FFF;
-    border-bottom-color: transparent;
-    margin-top: 13px;
-    margin-right: 3px;
-    color: #DD3131;
+  border-top: 2px solid #dd3131;
+  border-left: 2px solid #dd3131;
+  border-right: 2px solid #dd3131;
+  border-bottom: 2px solid #fff;
+  border-bottom-color: transparent;
+  margin-top: 13px;
+  margin-right: 3px;
+  color: #dd3131;
 }
 .info .info-body .nav-tabs .nav-link:hover {
-    font-weight: 700;
-    border-top: 2px solid #DD3131;
-    border-left: 2px solid #DD3131;
-    border-right: 2px solid #DD3131;
-    border-bottom: 2px solid #FFF;
-    border-bottom-color: transparent;
-    margin-top: 13px;
-    margin-right: 3px;
-    color: #DD3131;
-    border-radius: 5px 5px 0 0;
-    transition: background 0.25s linear;
+  font-weight: 700;
+  border-top: 2px solid #dd3131;
+  border-left: 2px solid #dd3131;
+  border-right: 2px solid #dd3131;
+  border-bottom: 2px solid #fff;
+  border-bottom-color: transparent;
+  margin-top: 13px;
+  margin-right: 3px;
+  color: #dd3131;
+  border-radius: 5px 5px 0 0;
+  transition: background 0.25s linear;
 }
 .nav-tabs {
-    border-bottom: 1px solid #DD3131;
+  border-bottom: 1px solid #dd3131;
 }
 .info .info-body .tab-content {
-    margin: 40px 40px;
-    padding-bottom: 100px;
+  margin: 40px 40px;
+  padding-bottom: 100px;
 }
 .info .info-body .tab-content .attribute {
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 10px;
-    margin-right: -11px;
-    padding-left: 20px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid silver;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-right: -11px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid silver;
 }
 .info .info-body .tab-content .value {
-    font-size: 18px;
-    font-weight: 400;
-    margin-bottom: 10px;
-    margin-left: -11px;
-    padding-left: 20px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid silver;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  margin-left: -11px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid silver;
 }
 .info .info-body .button {
-    position: absolute;
-    top: 10px;
-    right: 20px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
 }
 .info .info-body .button .btn {
-    font-size: 18px;
-    font-weight: 600;
-    color: rgb(133, 50, 50);
-    background-color: rgb(245, 178, 189);
-    border: 2px solid rgb(190, 90, 107);
-    padding: 8px 12px 8px 11px;
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(133, 50, 50);
+  background-color: rgb(245, 178, 189);
+  border: 2px solid rgb(190, 90, 107);
+  padding: 8px 12px 8px 11px;
 }
 .info .info-body .button .btn:hover {
-    background-color: rgb(236, 115, 135);
+  background-color: rgb(236, 115, 135);
 }
 .info .info-body .button .bi::after {
-    content: "";
-    border-right: 2px solid rgb(190, 90, 107);
-    display: inline-block;
-    height: 45px;
-    margin: -20px 10px -16px 10px;
+  content: "";
+  border-right: 2px solid rgb(190, 90, 107);
+  display: inline-block;
+  height: 45px;
+  margin: -20px 10px -16px 10px;
 }
 .info .info-body .alert {
-    font-size: 20px;
-    font-weight: 600;
-    padding-top: 20px;
-    height: 150px;
-    width: 600px;
-    border-radius: 8px;
-    display: none;
-    position: fixed;
-    top: 17vh;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition-timing-function: ease;
-    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
-    transition-timing-function: ease-in;
-    transition: 0.5s linear;
-    z-index: 1;
+  font-size: 20px;
+  font-weight: 600;
+  padding-top: 20px;
+  height: 150px;
+  width: 600px;
+  border-radius: 8px;
+  display: none;
+  position: fixed;
+  top: 17vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition-timing-function: ease;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition-timing-function: ease-in;
+  transition: 0.5s linear;
+  z-index: 1;
 }
 .info .info-body .alert a {
-    color: inherit;
-    font-weight: 600;
+  color: inherit;
+  font-weight: 600;
 }
 .info .info-body .alert a:hover {
-    color: rgb(185, 138, 138)
+  color: rgb(185, 138, 138);
 }
 .info .info-body .alert p {
-    font-size: 17px;
-    font-weight: 400;
-    margin-left: 20px;
+  font-size: 17px;
+  font-weight: 400;
+  margin-left: 20px;
 }
 .info .info-body .alert .bi {
-    font-size: 23px;
-    margin-left: 20px;
-    margin-right: 12px;
+  font-size: 23px;
+  margin-left: 20px;
+  margin-right: 12px;
 }
 /* #endregion */
 
 /* User Rating and Review */
 /* #region */
 .rate-divider {
-    border-top: 1px solid silver;
-    margin: 30px -20px 30px -20px;
+  border-top: 1px solid silver;
+  margin: 30px -20px 30px -20px;
 }
 .user-rating {
-    display: flex;
-    justify-content: space-between;
-    font-size: 27px;
-    font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  font-size: 27px;
+  font-weight: 600;
 }
 .user-rating .btn {
-    margin-left: 10px;
-    font-size: 23px;
-    border-radius: 7px;
+  margin-left: 10px;
+  font-size: 23px;
+  border-radius: 7px;
 }
 .user-rating .btn .bi {
-    margin-right: 7px;
+  margin-right: 7px;
 }
 .user-rating .yes {
-    background-color: #24923D;
-    padding-right: 30px;
+  background-color: #24923d;
+  padding-right: 30px;
 }
 .user-rating .yes:hover {
-    background-color: #1e7732;
+  background-color: #1e7732;
 }
 .user-rating .nope {
-    background-color: #DD3131;
+  background-color: #dd3131;
 }
 .user-rating .nope:hover {
-    background-color: #a33333;
+  background-color: #a33333;
 }
 .user-rating .yes .bi {
-    padding-right: 8px;
+  padding-right: 8px;
 }
 .user-review {
-    font-size: 27px;
-    font-weight: 600;
-    text-decoration: underline;
-    color: #DD3131;
+  font-size: 27px;
+  font-weight: 600;
+  text-decoration: underline;
+  color: #dd3131;
 }
 .user-review .bi {
-    margin-left: 5px;
-    font-size: 27px;
+  margin-left: 5px;
+  font-size: 27px;
 }
 .user-review:hover {
-    color: #f36969;
+  color: #f36969;
 }
 
 .modal h5 {
-    margin-left: 1ch;
-    font-size: 27px;
-    font-weight: 600;
+  margin-left: 1ch;
+  font-size: 27px;
+  font-weight: 600;
 }
 .modal .modal-header .btn-close {
-    margin-right: 1ch;
+  margin-right: 1ch;
 }
 .modal .col-form-label {
-    font-size: 20px;
-    font-weight: 500;
+  font-size: 20px;
+  font-weight: 500;
 }
 .modal .form-control {
-    font-size: 20px; 
- }
- .modal .form-control:focus {
-    border-color: rgba(221, 49, 49, 1) !important;
-    box-shadow: 0 0 5px rgba(221, 49, 49, 1) !important;
-    outline: 0 none !important;
- }
+  font-size: 20px;
+}
+.modal .form-control:focus {
+  border-color: rgba(221, 49, 49, 1) !important;
+  box-shadow: 0 0 5px rgba(221, 49, 49, 1) !important;
+  outline: 0 none !important;
+}
 .modal textarea {
-    resize: none;
-    overflow: hidden;
-    min-height: 150px;
+  resize: none;
+  overflow: hidden;
+  min-height: 150px;
 }
 .modal .modal-footer .container {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 .modal .btn-secondary {
-    font-size: 20px;
-    color: #000000;
-    background-color: #FFFFFF;
-    border-radius: 6px;
-    padding-left: 18px;
-    padding-right: 18px;
+  font-size: 20px;
+  color: #000000;
+  background-color: #ffffff;
+  border-radius: 6px;
+  padding-left: 18px;
+  padding-right: 18px;
 }
 .modal .btn-danger {
-    font-size: 20px;
-    background-color: #DD3131;
-    border-radius: 6px;
-    border-color: #DD3131;
-    padding-left: 18px;
-    padding-right: 18px;
+  font-size: 20px;
+  background-color: #dd3131;
+  border-radius: 6px;
+  border-color: #dd3131;
+  padding-left: 18px;
+  padding-right: 18px;
 }
 .modal .btn-secondary:hover {
-    background-color: #e0e0e0;
+  background-color: #e0e0e0;
 }
 .modal .btn-danger:hover {
-    background-color: #a33333;
+  background-color: #a33333;
 }
 /* #endregion */
 
 /* Cards of Review */
 /* #region */
 .card-divider {
-    border-top: 1px solid silver;
-    margin: 35px -20px 35px -20px;
+  border-top: 1px solid silver;
+  margin: 35px -20px 35px -20px;
 }
 .card {
-    margin-top: 20px; 
-    border: 2px solid silver;
-    border-radius: 10px;
+  margin-top: 20px;
+  border: 2px solid silver;
+  border-radius: 10px;
 }
 .card .card-body {
-    border-bottom: 1px solid silver;
+  border-bottom: 1px solid silver;
 }
 .card .profile {
-    margin-left: 20px;
-    margin-right: 30px;
+  margin-left: 20px;
+  margin-right: 30px;
 }
 .card .profile img {
-    display: block;
-    margin: 0 auto;
-    clip-path: circle();
-    height: 180px;
+  display: block;
+  margin: 0 auto;
+  clip-path: circle();
+  height: 180px;
 }
 .card .name {
-    margin-top: 18px;
-    text-align: center;
-    font-size: 22px;
-    font-weight: 700;
-    word-wrap: normal;
+  margin-top: 18px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  word-wrap: normal;
 }
 .card .nick {
-    text-align: center;
-    font-size: 16px;
-    font-weight: 400;
-    word-wrap: normal;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  word-wrap: normal;
 }
 .card .review {
-    padding-left: 50px;
-    border-left: 2px solid rgb(218, 218, 218);
+  padding-left: 50px;
+  border-left: 2px solid rgb(218, 218, 218);
 }
 .card .review .subject {
-    font-weight: 700;
-    font-size: 33px;
-    margin-top: 0.27em;
-    margin-bottom: 0.6em;
+  font-weight: 700;
+  font-size: 33px;
+  margin-top: 0.27em;
+  margin-bottom: 0.6em;
 }
 .card .review .rating {
-    text-align: end;
-    margin-top: 12px;
+  text-align: end;
+  margin-top: 12px;
 }
 .card .review #good .icon {
-    background-color: #24923D;
-    font-size: 24px;
-    color: white;
-    padding: 0.2em 0.4em 0.4em 0.4em;
-    border-radius: 4px;
-    border: 1px solid #24923D;
+  background-color: #24923d;
+  font-size: 24px;
+  color: white;
+  padding: 0.2em 0.4em 0.4em 0.4em;
+  border-radius: 4px;
+  border: 1px solid #24923d;
 }
 .card .review #bad .icon {
-    background-color: #DD3131;
-    font-size: 24px;
-    color: white;
-    padding: 0.2em 0.4em 0.4em 0.4em;
-    border-radius: 4px;
-    border: 1px solid #DD3131;
+  background-color: #dd3131;
+  font-size: 24px;
+  color: white;
+  padding: 0.2em 0.4em 0.4em 0.4em;
+  border-radius: 4px;
+  border: 1px solid #dd3131;
 }
-.card .review .rating .info {    
-    font-size: 17px;
-    padding: 0.67em 0.95em 0.67em 0.6em;
-    border-radius: 4px;
-    border: 2px solid silver;
+.card .review .rating .info {
+  font-size: 17px;
+  padding: 0.67em 0.95em 0.67em 0.6em;
+  border-radius: 4px;
+  border: 2px solid silver;
 }
 .card .review .detail {
-    font-size: 20px;
+  font-size: 20px;
 }
 .card .review .timestamp {
-    position: absolute;
-    bottom: 75px;
-    right: 40px;
+  position: absolute;
+  bottom: 75px;
+  right: 40px;
 }
 .card .card-bottom .vote-review {
-    margin-bottom: 16px;
-    margin-left: 38px;
-    padding-top: 10px;
-    font-size: 17px;
-    color: gray;
+  margin-bottom: 16px;
+  margin-left: 38px;
+  padding-top: 10px;
+  font-size: 17px;
+  color: gray;
 }
 .card .card-bottom .vote-review .bi {
-    margin-left: 3px;
-    font-size: 23px;
-    color: gray;
+  margin-left: 3px;
+  font-size: 23px;
+  color: gray;
 }
 .card .card-bottom .voter-info {
-    margin-top: 6px;
-    font-size: 17px;
-    margin-left: 30px;
-    padding-top: 10px;
-    text-align: end;
-    color: gray;
+  margin-top: 6px;
+  font-size: 17px;
+  margin-left: 30px;
+  padding-top: 10px;
+  text-align: end;
+  color: gray;
 }
 .card strong {
-    color: black;
+  color: black;
 }
 /* #endregion */
-
 
 /* Footer Page */
 /* #region */
 footer {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: pink;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: pink;
 }
 footer h2 {
-    font-size: 27px;
-    font-weight: 700;
-    margin-bottom: 0.9em;
+  font-size: 27px;
+  font-weight: 700;
+  margin-bottom: 0.9em;
 }
 footer .about-us {
-    margin-right: 40px;
-    border-right: 2px solid #363636 ;
+  margin-right: 40px;
+  border-right: 2px solid #363636;
 }
 footer .contact-us .bi {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 footer .contact-us .contact {
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 }
 footer .socmed-icon .btn {
-    flex-wrap: wrap;
-    font-size: 20px;
-    color: #000000;
-    background-color: #EEEEEE;
-    border: #afafaf;
+  flex-wrap: wrap;
+  font-size: 20px;
+  color: #000000;
+  background-color: #eeeeee;
+  border: #afafaf;
 }
 footer .socmed-icon .btn:hover {
-    background-color: #afafaf;
+  background-color: #afafaf;
 }
 /* #endregion */
