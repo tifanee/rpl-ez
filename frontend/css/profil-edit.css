@@ -237,6 +237,7 @@ body {
     background-color: #DD3131;
 }
 .profile .profile-body .btn:hover {
+    color: #FFF;
     background-color: #A33333;
 }
 

@@ -1,0 +1,402 @@
+body {
+    font-family: Lato;
+    background-color: #EEEEEE;
+}
+
+/* #Navigation Bar */
+/* #region */
+.toplogo img {
+    max-height: 60px;
+    max-width: auto; 
+}
+#NavBar {
+    background-color: #FFFFFF;
+}
+.navbar-nav {
+    font-family: Lato;
+    font-size: 19px;
+}
+.navbar-nav #navbarDropdownMenuLink {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: 400;
+    color: #000000;
+}
+.navbar-nav #Photo img {
+    clip-path: circle();
+    border-radius: 50%;
+    height: 50px;
+    margin-bottom: -20px;
+    margin-top: -25px;
+}
+.navbar-nav .dropdown-item {
+    font-size: 17px;
+    font-weight: 700;
+}
+.navbar-nav .exit {
+    color: #DD3131;
+}
+.navbar-nav .dropdown-item:hover {
+    background-color: pink;
+}
+#NavBar .searchbar .inputbox {
+    width: 525px;
+    height: 47px;
+    font-size: 1.18em;
+    font-weight: 700;
+    padding-right: 53.5px;
+}
+#NavBar .searchbar .inputbox:focus {
+    box-shadow: none;
+    border: 2px solid #DD3131
+}
+#NavBar .searchbar .btn {
+    margin-left: -53.5px;
+    height: 47px;
+    font-size: 1.18em;
+    font-weight: 700;
+}
+/* #endregion */
+
+/* Profile Header */
+/* #region */
+.profile {
+    margin-top: -48px;
+}
+.profile .profile-header {
+    position: relative;
+    background-color: #FFFFFF;
+    z-index: -2;
+}
+.profile .images-header .profile-cover {
+    object-fit: cover;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    filter: brightness(30%);
+    z-index: -1;
+}
+.profile .images-header .profile-image {
+    object-fit: cover;
+    position: relative;
+    height: 250px;
+    width: 250px;
+    clip-path: circle();
+    margin-top: -130px;
+    margin-left: 120px;
+}
+.profile .images-header .profile-image-bg {
+    object-fit: cover;
+    position: relative;
+    height: 260px;
+    width: 260px;
+    clip-path: circle();
+    margin-top: -130px;
+    margin-left: -258px;
+    z-index: -1;
+}
+.profile strong {
+    font-weight: 800;
+}
+.profile .profile-header h2 {
+    color: #FFF;
+    position: relative;
+    margin-top: -190px;
+    margin-left: 420px;
+    margin-bottom: 26px;
+    font-weight: 800;
+    font-size: 40px;
+}
+.profile .profile-header h3 {
+    position: relative;
+    margin-left: 420px;
+    font-size: 20px;
+}
+/* #endregion */
+
+.profile .profile-body {
+    position: relative;
+    background-color: #FFFFFF;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+
+/* Profile Sidebar */
+/* #region */
+.profile .profile-body a {
+    color: #000;
+    text-decoration: none;
+}
+.profile .profile-body a:hover {
+    color: #DD3131;
+}
+.profile .profile-body .sidebar {
+    font-size: 24px;
+    font-weight: 600;
+    border: 1px solid silver;
+    border-radius: 5px;
+    margin: 0px 0px 20px 20px;
+    padding: 10px 5px 10px 17px;
+}
+.profile .profile-body .sidebar .items {
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 15px;
+    padding-left: 17px;
+}
+.profile .profile-body .sidebar .last {
+    margin-bottom: 17px;
+}
+.profile .profile-body .bar .active,
+.profile .profile-body .bar .active a {
+    font-weight: 800;
+    color: #DD3131;
+}
+/* #endregion */
+
+
+/* Profile Body */
+/* #region */
+.profile-body .rating-cards .nav-tabs {
+    margin: -12.75px 30px 0px 8px;    
+    border-bottom: 1px solid #DD3131;
+    justify-content: center;
+}
+.profile-body .rating-cards .nav-tabs .nav-link {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-right: 5px;
+    padding: 10px 60px 10px 60px;
+}
+.profile-body .rating-cards .nav-tabs .active {
+    border-top: 2px solid #DD3131;
+    border-left: 2px solid #DD3131;
+    border-right: 2px solid #DD3131;
+    border-bottom: 2px solid #FFF;
+    border-bottom-color: transparent;
+    margin-top: 13px;
+    margin-right: 3px;
+    color: #DD3131;
+}
+.profile-body .rating-cards .nav-tabs .nav-link:hover {
+    font-weight: 700;
+    border-top: 2px solid #DD3131;
+    border-left: 2px solid #DD3131;
+    border-right: 2px solid #DD3131;
+    border-bottom: 2px solid #FFF;
+    border-bottom-color: transparent;
+    margin-top: 13px;
+    margin-right: 3px;
+    color: #DD3131;
+    border-radius: 5px 5px 0 0;
+    transition: background 0.25s linear;
+}
+.profile-body .rating-cards .tab-content {
+    margin-top: 30px;
+    margin-left: -6px;
+}
+.profile-body .rating-cards .tab-content .tab-searchbar {
+    display: inline-flex;
+    width: 50%;
+    margin: 0px auto 30px;
+}
+.profile-body .rating-cards .tab-content .inputbox-recommended,
+.profile-body .rating-cards .tab-content .inputbox-unrecommended {
+    border: 2px solid #afafaf;
+    font-size: 19px;
+    font-weight: 600;
+    padding-left: 20px;
+    padding-right: 55px;
+}
+.profile-body .rating-cards .tab-content .inputbox-recommended:focus,
+.profile-body .rating-cards .tab-content .inputbox-unrecommended:focus {
+    border: 1px solid #DD3131;
+    box-shadow: 0px 0px 3px 3px rgba(221, 49, 49, 0.5);
+}
+.profile-body .rating-cards .tab-content .tab-searchbar .btn {
+    margin-left: -46.5px;
+    height: 47px;
+    border: 2px solid #DD3131;
+    font-size: 1.18em;
+    font-weight: 700;
+    color: #DD3131;
+}
+.profile-body .rating-cards .tab-content .tab-searchbar .btn:hover {
+    color: #FFF;
+}
+
+.profile-body .rating-cards .tab-content .card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.profile-body .rating-cards .tab-content .card:hover {
+    -webkit-box-shadow: 0 4px 12px rgba(153, 153, 153, 0.5);
+    box-shadow: 0 4px 12px rgba(153, 153, 153, 0.5);
+    -webkit-transition: .3s;
+    transition: .3s
+}
+.profile-body .rating-cards .tab-content .card:hover >
+a img {
+    transform: scale(1.08);
+    transition: transform .2s;
+}
+.profile-body .rating-cards .tab-content .card img {
+    object-fit: cover;
+    height: 270px;
+}
+.profile-body .rating-cards .tab-content .card .card-body h5 {
+    font-size: 24px;
+    font-weight: 800;
+    margin-top: 4px;
+}
+.profile-body .rating-cards .tab-content .card .card-body .dropstart {
+    position: absolute;
+    bottom: 178px;
+    right: 17px;
+    background-color: #FFF;
+}
+.profile-body .rating-cards .tab-content .card .card-body .dropstart .btn {
+    border-radius: 50%;
+}
+.profile-body .rating-cards .tab-content .card .card-body .dropstart .dropdown-item {
+    font-weight: 700;
+    margin-top: -5px;
+    margin-bottom: -5px;
+    padding-bottom: 5px;
+}
+.profile-body .rating-cards .tab-content .card .card-body .dropstart .dropdown-item:hover {
+    color: #DD3131;
+    background-color: pink;
+}
+.profile-body .rating-cards .tab-content .card .card-body .card-rating i {
+    color: #FF9900;
+    margin-right: 8px;
+}
+.profile-body .rating-cards .tab-content .card .card-body .card-address i {
+    color: #24923D;
+    margin-right: 8px;
+}
+.profile-body .rating-cards .tab-content .card .card-body .user-rating {
+    display: inline-flex;
+    margin: 20px auto 0;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+.profile-body .rating-cards .tab-content .card .card-body .user-rating i {
+    width: 60%;
+    font-size: 27px;
+    color: white;
+    padding: 0.3em 0.4em 0.31em 0.4em;
+    border-radius: 4px;
+}
+.profile-body .rating-cards .tab-content .card .card-body .good i {
+    background-color: #24923D;
+    border: 1px solid #24923D;  
+}
+.profile-body .rating-cards .tab-content .card .card-body .bad i {
+    background-color: #DD3131;
+    border: 1px solid #DD3131;
+}
+.profile-body .rating-cards .tab-content .card .card-body .good .info {    
+    font-size: 18px;
+    padding: 0.55em 2.5em 0.57em 1.5em;
+    border-radius: 4px;
+    border: 2.5px solid silver;
+}
+.profile-body .rating-cards .tab-content .card .card-body .bad .info {    
+    font-size: 18px;
+    padding: 0.55em 1.2em 0.57em 0.8em;
+    border-radius: 4px;
+    border: 2.5px solid silver;
+}
+.profile-body .rating-cards .tab-content .card .card-footer {
+    color: #666666;
+    font-weight: 800;
+}
+.profile-body .rating-cards .tab-content .card .card-footer .date {
+    text-align: end;
+}
+.profile-body .rating-cards .tab-content .modal h5 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 2px;
+    margin-bottom: 4px;
+    margin-left: 15px;
+}
+.profile-body .rating-cards .tab-content .modal h6 {
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 35px;
+    margin-left: 15px;
+}
+.profile-body .rating-cards .tab-content .modal .btn-secondary {
+    font-size: 20px;
+    color: #000000;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    padding-left: 18px;
+    padding-right: 18px;
+    margin-left: 15px;
+}
+.profile-body .rating-cards .tab-content #staticBackdrop2 .btn-secondary {
+    margin-right: 15px;
+}
+.profile-body .rating-cards .tab-content .modal .btn-danger {
+    font-size: 20px;
+    background-color: #DD3131;
+    border-radius: 6px;
+    border-color: #DD3131;
+    padding-left: 18px;
+    padding-right: 18px;
+    margin-right: 15px;
+}
+.profile-body .rating-cards .tab-content .modal .btn-secondary:hover {
+    background-color: #e0e0e0;
+}
+.profile-body .rating-cards .tab-content .modal .btn-danger:hover {
+    background-color: #a33333;
+}
+
+/* #endregion */
+
+/* Footer */
+/* #region */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: pink;
+}
+footer h2 {
+    font-size: 27px;
+    font-weight: 700;
+    margin-bottom: 0.9em;
+}
+footer .about-us {
+    margin-right: 40px;
+    border-right: 2px solid #363636 ;
+}
+footer .contact-us .bi {
+    margin-right: 10px;
+}
+footer .contact-us .contact {
+    margin-bottom: 12px;
+}
+footer .socmed-icon .btn {
+    flex-wrap: wrap;
+    font-size: 20px;
+    color: #000000;
+    background-color: #EEEEEE;
+    border: #afafaf;
+}
+footer .socmed-icon .btn:hover {
+    background-color: #afafaf;
+}
+/* #endregion */
+
