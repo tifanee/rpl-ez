@@ -4,7 +4,7 @@ $host = "localhost";
 $port = "5432";
 $dbname = "db_ezeats";
 $user = "postgres";
-$password = "ravenclaw500";
+$password = "_";
 
 // Heroku
 // $host = "ec2-34-193-112-164.compute-1.amazonaws.com";
