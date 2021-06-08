@@ -188,40 +188,36 @@ body {
   height: 45px;
   margin: -20px 10px -16px 10px;
 }
-.info .info-body .alert {
+.info .info-body .modal .modal-content {
+  background-color: #ffeeee;
+}
+.info .info-body .modal a {
+  font-weight: 600;
+  color: #dd3131;
+}
+.info .info-body .modal a:hover {
+  color: #a33333;
+}
+.info .info-body .modal .modal-header {
+  border-bottom: 2.4px solid silver;
+}
+.info .info-body .modal .modal-title {
+  font-size: 21px;
+  font-weight: 600;
+  margin-left: 24px;
+}
+.info .info-body .modal .modal-title .bi {
+  font-size: 22px;
+  margin-right: 15px;
+}
+.info .info-body .modal .modal-body h6 {
   font-size: 20px;
-  font-weight: 600;
-  padding-top: 20px;
-  height: 150px;
-  width: 600px;
-  border-radius: 8px;
-  display: none;
-  position: fixed;
-  top: 17vh;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition-timing-function: ease;
-  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
-  transition-timing-function: ease-in;
-  transition: 0.5s linear;
-  z-index: 1;
-}
-.info .info-body .alert a {
-  color: inherit;
-  font-weight: 600;
-}
-.info .info-body .alert a:hover {
-  color: rgb(185, 138, 138);
-}
-.info .info-body .alert p {
-  font-size: 17px;
   font-weight: 400;
-  margin-left: 20px;
 }
-.info .info-body .alert .bi {
-  font-size: 23px;
-  margin-left: 20px;
-  margin-right: 12px;
+.info .info-body .modal .modal-body {
+  margin-top: 8px;
+  margin-bottom: 35px;
+  margin-left: 25px;
 }
 .container .btn-editresto {
   color: white;
@@ -294,6 +290,9 @@ body {
   color: #f36969;
 }
 
+.container .edit-resto .modal-content {
+  background-color: white !important;
+}
 .modal h5 {
   margin-left: 1ch;
   font-size: 27px;
@@ -349,21 +348,21 @@ body {
   padding-top: 8px;
   padding-bottom: 8px;
 }
-.modal-body {
+.edit-resto .modal-body {
   padding: 32px;
 }
-.modal-body h4 {
+.edit-resto .modal-body h4 {
   font-size: 24px;
   font-weight: 800;
 }
-.form-label {
+.edit-resto .form-label {
   font-size: 16px;
   color: #6b6b6b;
 }
-.form-select {
+.edit-resto .form-select {
   height: 45px;
 }
-.select select {
+.edit-resto .select select {
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
   font-size: 14px;
   color: rgb(109, 109, 109);
@@ -372,12 +371,12 @@ body {
   width: 496px;
   height: 40px;
 }
-.form-select:focus {
+.edit-resto .form-select:focus {
   border-color: #dd3131;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
     0 0 10px rgba(221, 49, 49, 0.8);
 }
-.form-jambuka {
+.edit-resto .form-jambuka {
   border-radius: 5px;
   padding: 8px 16px;
   width: 100%;
@@ -388,20 +387,20 @@ body {
   font-size: 14px;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.062);
 }
-.form-jambuka:focus {
+.edit-resto .form-jambuka:focus {
   border-color: #dd3131;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
     0 0 10px rgba(221, 49, 49, 0.8);
 }
-.modal .input-group {
+.edit-resto .input-group {
   margin-bottom: 16px;
   color: #dd3131;
 }
-.modal .input-group .form-control {
+.edit-resto .input-group .form-control {
   padding-top: 6px;
   padding-bottom: 5px;
 }
-.modal .modal-footer .container-edit {
+.edit-resto .modal-footer .container-edit {
   display: flex;
   justify-content: space-between;
 }
