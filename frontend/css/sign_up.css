@@ -5,9 +5,9 @@ body {
   background-image: url("../img/background.png");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
-/*page sign up*/
-.judul-form {
+.container {
   width: 400px;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
   border-radius: 18px;
@@ -17,6 +17,13 @@ body {
   text-align: left;
   font-family: "Lato", sans-serif;
 }
+.col h1 {
+  color: black;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-size: 28px;
+  font-weight: 800;
+}
 img {
   display: block;
   margin-top: 16px;
@@ -24,56 +31,46 @@ img {
   margin-right: auto;
   width: 200px;
 }
-.judul-form h1 {
-  color: black;
-  margin-top: 16px;
-  margin-bottom: 16px;
-  margin-left: 24px;
-  font-size: 30px;
-  font-weight: 800;
+.form-control:focus {
+  border-color: #dd3131;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 10px rgba(221, 49, 49, 0.8);
 }
-.form-input {
-  border-radius: 15px;
-  padding: 8px 16px;
-  margin-left: 24px;
-  margin-bottom: 16px;
-  width: 322px;
-  height: 25px;
-  border: 0px solid;
-  outline: none;
-  font-size: 14px;
-}
-.button-continue {
-  color: white;
+.btn-danger {
   background-color: #dd3131;
-  width: 354px;
-  height: 40px;
-  padding: 8px 8px;
-  margin-top: 14px;
-  margin-left: 24px;
-  margin-bottom: 8px;
+  width: 100%;
+  height: 36px;
+  margin-top: 16px;
   border: 0px solid;
-  border-radius: 15px;
+  border-radius: 5px;
   outline: none;
   font-size: 14px;
   font-weight: 700;
   cursor: pointer;
 }
-.button-continue:hover {
+.btn-danger :hover {
   background-color: #750909;
 }
-.punya-akun-ga {
+.btn-danger:focus {
+  border-color: #dd3131;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 10px rgba(221, 49, 49, 0.8);
+}
+.col .tdk-punya-akun {
   text-align: center;
-  margin-top: 16px;
-  margin-bottom: 16px;
+  margin-top: 20px;
   font-size: 16px;
 }
-.sign-in-click {
+.sign-up-click {
   text-decoration: underline;
   color: #dd3131;
   font-size: 16px;
   font-weight: 700;
 }
-.sign-in-click:hover {
+.sign-up-click:hover {
   color: #750909;
+}
+.form-control.is-invalid,
+.was-validated .form-control:valid {
+  background-image: unset !important;
 }
