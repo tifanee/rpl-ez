@@ -1,4 +1,5 @@
 # EzEats
+![index](https://user-images.githubusercontent.com/65725044/121421713-a7a8c680-c998-11eb-85f9-d318d9fe48b3.png)
 EzEats adalah aplikasi berbasis web yang diharapkan dapat membantu masyarakat, khususnya foodhunter untuk saling berinteraksi satu sama lain dengan bertukar informasi mengenai penilaian ataupun ulasan terhadap sebuah rumah makan.
 
 # Laporan Akhir Proyek Rekayasa Perangkat Lunak (KOM331)
