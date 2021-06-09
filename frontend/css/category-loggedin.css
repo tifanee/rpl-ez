@@ -83,6 +83,11 @@ body {
     display: inline-block;
     margin: 25px auto;
   }
+  .divider {
+    display: block;
+    padding-bottom: 20px;
+    background-color: #FFF;
+  }
   /* #endregion */
 
 /* Search Box */
@@ -90,7 +95,7 @@ body {
 .search-box {
     background-color: #eee;
     font-family: Lato;
-    margin-top: -30px;
+    margin-top: -40px;
   }
   .search-box .height {
     height: 0px;
