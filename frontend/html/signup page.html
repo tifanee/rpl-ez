@@ -14,6 +14,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css"
@@ -57,8 +58,10 @@
               <input
                 type="password"
                 class="form-control"
-                id="password"
+                id="newPassword"
                 placeholder="Password"
+                value=""
+                minlength="8"
                 required
               />
             </div>
@@ -66,10 +69,13 @@
               <input
                 type="password"
                 class="form-control"
-                id="password"
+                id="confirmPassword"
                 placeholder="Konfirmasi Password"
+                value=""
+                minlength="8"
                 required
               />
+              <div style="position: absolute;" id='message'></div>
             </div>
             <button type="submit" class="btn btn-danger">Daftar</button>
             <p class="tdk-punya-akun">
@@ -101,6 +107,16 @@
                 }, false)
               })
             })()
+        </script>
+        <script>
+          $('#newPassword, #confirmPassword').on('keyup', function () {
+              if ($('#newPassword').val().length > 7) {
+                if ($('#newPassword').val() == $('#confirmPassword').val()) {
+                  $('#message').html('Password Cocok').css('color', '#24923D');
+                } else 
+                  $('#message').html('Password Tidak Cocok!').css('color', '#DD3131');
+              } else $('#message').html('Password Minimal Terdiri dari 8 Karakter!').css('color', '#DD3131')
+            });
         </script>
     </body>
 </html>
