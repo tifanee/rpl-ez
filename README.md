@@ -64,16 +64,34 @@ Kemajuan teknologi perangkat lunak serta berkembangnya paradigma masyarakat dala
 # Hasil dan Pembahasan
 ## Use Case Diagram
 ## Activity Diagram
+### Mendaftar Akun
+![Activity Diagram-Register Akun](https://user-images.githubusercontent.com/65725044/121325450-cfb60c80-c93b-11eb-8895-8c36ee7319ed.png)
+### Masuk Akun
+![Activity Diagram-Sign In](https://user-images.githubusercontent.com/65725044/121325997-50750880-c93c-11eb-85de-495fb5f29faf.png)
 ## Class Diagram
 ## Entity Relationship Diagram (ERD)
 ## Software Architecture
 ## Fungsi Utama yang Dikembangkan
 ## Fungsi CRUD
 ### Create
+* Membuat akun pada aplikasi web EzEats
+* Membuat ulasan
+* Menambah daftar restoran
+* Menambah daftar restoran favorit
+* Menambah daftar restoran direkomendasikan/tidak direkomendasikan
 ### Read
+* Membaca user input (email dan password) pada akun pengguna saat sign in.
+* Menampilkan ulasan
+* Menampilkan daftar restoran
 ### Update
+* Mengedit info user
+* Mengubah kata sandi
+* Mengedit info restoran
+* Menambah foto profil pada pengguna
 ### Delete
-
+* Menghapus restoran favorit
+* Menghapus restoran direkomendasikan/tidak direkomendasikan
+* Menghapus riwayat resto yang baru dilihat
 # Hasil Implementasi
 ## Link Aplikasi
 
