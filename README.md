@@ -8,9 +8,9 @@ EzEats adalah aplikasi berbasis web yang diharapkan dapat membantu masyarakat, k
 **Asisten Praktikum:**
 | Nama                            | NIM       | 
 | ------------------------------- | --------- | 
-| Levina Siatono                  | G64190052 | 
-| Ali Naufal Ammarullah           | G64190063 | 
-| Muhammad Fauzan Ramadhan        | G64190074 | 
+| Levina Siatono                  | G64180019 | 
+| Ali Naufal Ammarullah           | G64180080 | 
+| Muhammad Fauzan Ramadhan        | G64180117 | 
 
 # Our Team
 | Nama                            | NIM       | ROLE                                  |
@@ -72,6 +72,12 @@ Kemajuan teknologi perangkat lunak serta berkembangnya paradigma masyarakat dala
 ## Entity Relationship Diagram (ERD)
 ## Software Architecture
 ## Fungsi Utama yang Dikembangkan
+* User dapat mendaftar terlebih dahulu mengunakan alamat email di website EzEats untuk menggunakan fitur-fitur yang ada.
+* User dapat membuat ulasan untuk restoran.
+* User dapat menambah dan menghapus favorit restoran.
+* User dapat menambah dan mengubah info restoran.
+* User dapat menyukai (merasa terbantu) oleh ulasan user lain.
+* User dapat melihat-lihat info restoran yang ada.
 ## Fungsi CRUD
 ### Create
 * Membuat akun pada aplikasi web EzEats
