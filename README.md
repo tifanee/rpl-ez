@@ -1,6 +1,17 @@
 # EzEats
 EzEats adalah aplikasi berbasis web yang diharapkan dapat membantu masyarakat, khususnya foodhunter untuk saling berinteraksi satu sama lain dengan bertukar informasi mengenai penilaian ataupun ulasan terhadap sebuah rumah makan.
 
+# Laporan Akhir Proyek Rekayasa Perangkat Lunak (KOM331)
+* Pararel : 2
+* Kelompok : 12
+
+**Asisten Praktikum:**
+| Nama                            | NIM       | 
+| ------------------------------- | --------- | 
+| Levina Siatono                  | G64190052 | 
+| Ali Naufal Ammarullah           | G64190063 | 
+| Muhammad Fauzan Ramadhan        | G64190074 | 
+
 # Our Team
 | Nama                            | NIM       | ROLE                                  |
 | ------------------------------- | --------- | ------------------------------------- |
@@ -23,21 +34,61 @@ Kemajuan teknologi perangkat lunak serta berkembangnya paradigma masyarakat dala
 4. Menyediakan tempat bagi pemilik rumah makan untuk memperkenalkan kedainya.
 5. Menciptakan persaingan sehat antar rumah makan agar lebih dapat menarik perhatian pelanggan.
 
-# Ruang Lingkup
+# User Analisis
+## User Profile
+## User Story
+
+# Spesifikasi Teknis Lingkungan Pengembangan
+## Software
 * Operating system : Windows 10, Mac OS 
-* Framework : Laravel
 * Text Editor : VS Code
-* Design Tool : Figma
+* UI Design Tool : Figma
 * Database : PostgreSQL
-* Server : Heroku
+* Server : Apache
+* Hosting : Heroku
+
+## Hardware
+* Prosesor : 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz (8 CPUs), ~2.4GHz
+* Memori : 8192MB RAM
+* Storage : 512GB
+
+## Tech Stack 
+* Front-End : HTML, CSS, Bootsrap, JQuery
+* Back-End : PHP
+
+## Lainnya
 * Version Control System : Github
 * Project Management : Trello
-* Lain-lain : HTML, CSS, Javascript
+* Software Documentation
 
-# Deskripsi Singkat Perangkat Lunak
-Perangkat lunak ini dibuat dengan bentuk aplikasi berbasis web. Aplikasi web yang kami namakan “EzEats” ini diharapkan dapat membantu pengguna, dalam hal ini konsumen untuk saling berinteraksi dan bertukar informasi dengan pengguna lainnya perihal rumah makan melalui sarana digital. Pengguna dapat memberikan ulasannya terkait rumah makan yang bersangkutan. Ulasan atau review dari pengguna ini diharapkan dapat menjadi bahan pertimbangan pengguna lain untuk memilih makan di restoran tersebut. Bagi pengguna yang bisa saja sekaligus merupakan pemilik rumah makan, ulasan tersebut juga dapat menjadi kritik, saran, dan pujian untuk membantu agar rumah makan yang bersangkutan dapat berkembang ke arah yang lebih baik.
+# Hasil dan Pembahasan
+## Use Case Diagram
+## Activity Diagram
+## Class Diagram
+## Entity Relationship Diagram (ERD)
+## Software Architecture
+## Fungsi Utama yang Dikembangkan
+## Fungsi CRUD
+### Create
+### Read
+### Update
+### Delete
 
-Pengguna aplikasi web “EzEats” diharuskan mendaftar atau Sign Up dan Login terlebih dahulu untuk dapat menikmati seluruh fitur yang tersedia di aplikasi ini. Pengguna yang telah mendaftar dan memiliki akun dapat menikmati fitur utama dalam aplikasi ini, yakni fitur menambahkan entri rumah makan berikut dengan info dari rumah makan tersebut. Fitur lain yang akan didapat oleh pengguna yang telah mendaftar adalah fitur untuk menulis ulasan atau review mengenai rumah makan tertentu. Selain itu, pengguna yang terdaftar juga dapat memberikan penilaian atau ratings terhadap suatu rumah makan.  Penilaian ini akan dikembangkan juga menjadi beberapa aspek dalam standar penilaian rumah makan, seperti kebersihan, harga, desain interior, dan sebagainya. Untuk pengguna yang belum memiliki akun, aplikasi “EzEats” tetap dapat diakses. Namun, pengguna hanya dapat melihat daftar rumah makan beserta penilaian serta ulasannya saja.
+# Hasil Implementasi
+## Link Aplikasi
 
+# Testing
+Kami melakukan pengujian secara manual (manual testing) tanpa menggunakan bantuan tools atau scripts, tujuannya adalah untuk memastikan aplikasi bebas dari bugs/error dan memastikan dapat bekerja sesuai dengan yang diharapkan.
 
+## Positive Case
+Pengujian Positif merupakan jenis pengujian yang dilakukan pada aplikasi perangkat lunak dengan memberikan kumpulan data yang valid sebagai input.
 
+## Negative Case
+Pengujian Negatif adalah metode pengujian yang dilakukan pada aplikasi perangkat lunak dengan memberikan kumpulan data yang tidak valid atau tidak tepat sebagai input.
+
+# Kesimpulan
+Dengan rentang waktu pengembangan aplikasi yang terbatas, tim Kami berhasil membangun sistem yang diharapkan walaupun masih jauh dari kata sempurna.
+
+# Saran untuk Pengembangan Berikutnya
+
+# Ucapan Terima Kasih
