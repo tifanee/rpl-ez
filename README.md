@@ -60,7 +60,7 @@ Kemajuan teknologi perangkat lunak serta berkembangnya paradigma masyarakat dala
 ## Lainnya
 * Version Control System : Github
 * Project Management : Trello
-* Software Documentation
+* Software Documentation : Google Sites
 
 # Hasil dan Pembahasan
 ## Use Case Diagram
@@ -73,12 +73,9 @@ Kemajuan teknologi perangkat lunak serta berkembangnya paradigma masyarakat dala
 ## Entity Relationship Diagram (ERD)
 ## Software Architecture
 ## Fungsi Utama yang Dikembangkan
-* User dapat mendaftar terlebih dahulu mengunakan alamat email di website EzEats untuk menggunakan fitur-fitur yang ada.
 * User dapat membuat ulasan untuk restoran.
-* User dapat menambah dan menghapus favorit restoran.
-* User dapat menambah dan mengubah info restoran.
-* User dapat menyukai (merasa terbantu) oleh ulasan user lain.
-* User dapat melihat-lihat info restoran yang ada.
+* User dapat menambah info restoran.
+* User dapat memberi penilaian pada restoran.
 ## Fungsi CRUD
 ### Create
 * Membuat akun pada aplikasi web EzEats
@@ -101,19 +98,27 @@ Kemajuan teknologi perangkat lunak serta berkembangnya paradigma masyarakat dala
 * Menghapus riwayat resto yang baru dilihat
 # Hasil Implementasi
 ## Link Aplikasi
-
-# Testing
+Demo aplikasi dapat diakses pada link : *insert link*
+# Testing (Test Cases)
 Kami melakukan pengujian secara manual (manual testing) tanpa menggunakan bantuan tools atau scripts, tujuannya adalah untuk memastikan aplikasi bebas dari bugs/error dan memastikan dapat bekerja sesuai dengan yang diharapkan.
 
 ## Positive Case
 Pengujian Positif merupakan jenis pengujian yang dilakukan pada aplikasi perangkat lunak dengan memberikan kumpulan data yang valid sebagai input.
-
+| No |   Scenario  | Pre-requisites | Steps | Expected Result | Actual Result | Status |
+| -- | ----------- | -------------- | ----- | --------------- | ------------- | ------ |
+| 1  | User login dengan akun yang valid | User mengakses website EzEats | Pergi ke halaman Masuk, masukkan email dan password, klik masuk | Login berhasil dan user diarahkan ke home | d | e |
+| 2  | User mendaftar nama lengkap, email, dan password yang valid | User mengakses website EzEats | Pergi ke halaman daftar, masukkan nama, alamat email, password, dan konfirmasi password, lalu klik daftar | Daftar berhasil | d | e |
+| 3  | Edit info user di edit profile | User mengakses website EzEats | b | c | d | e |
+| 4  | Menambah ulasan restoran | User mengakses website EzEat | b | Berhasil menambahkan ulasan | d | e |
 ## Negative Case
 Pengujian Negatif adalah metode pengujian yang dilakukan pada aplikasi perangkat lunak dengan memberikan kumpulan data yang tidak valid atau tidak tepat sebagai input.
 
 # Kesimpulan
-Dengan rentang waktu pengembangan aplikasi yang terbatas, tim Kami berhasil membangun sistem yang diharapkan walaupun masih jauh dari kata sempurna.
+Dengan rentang waktu pengembangan aplikasi yang terbatas, tim kami berhasil membangun sistem yang diharapkan walaupun masih jauh dari kata sempurna.
 
 # Saran untuk Pengembangan Berikutnya
 
 # Ucapan Terima Kasih
+Selama pengembangan website EzEats ini, tim kami banyak mempelajari hal-hal baru dalam bidang pengembangan perangkat lunak. Maka dari itu, kami ingin mengucapkan terima kasih kepada :
+1. Para dosen Ilmu Komputer IPB terutama dosen-dosen mata kuliah Rekayasa Perangkat Lunak karena telah memberikan ilmu kepada kami
+2. Para asisten praktikum karena telah memberikan masukan dan saran selama pengembangan website EzEats
