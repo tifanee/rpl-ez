@@ -64,6 +64,9 @@ Kemajuan teknologi perangkat lunak serta berkembangnya paradigma masyarakat dala
 
 # Hasil dan Pembahasan
 ## Use Case Diagram
+![usecase](https://user-images.githubusercontent.com/78838446/121478619-6bef1a80-c9f3-11eb-8a43-f1bae33cc7a5.png)
+##Use Case Description
+
 ## Activity Diagram
 ### Mendaftar Akun
 ![Activity Diagram-Register Akun](https://user-images.githubusercontent.com/65725044/121325450-cfb60c80-c93b-11eb-8895-8c36ee7319ed.png)
