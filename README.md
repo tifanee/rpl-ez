@@ -37,8 +37,17 @@ Kemajuan teknologi perangkat lunak serta berkembangnya paradigma masyarakat dala
 
 # User Analisis
 ## User Profile
+Target kami adalah food hunter dan masyarakat yang ingin membeli suatu makanan dan tidak mengetahui letak tempat restorannya. Dengan ini juga para pedagang penjual makanan yang berada direstoran maupun toko dapat memasukkan data restorannya sehingga menjadi tempat promosi mereka.
 ## User Story
-
+- Sebagai pengguna yang ingin menggunakan aplikasi, agar dapat terdaftar dalam aplikasi dan dapat menggunakan seluruh fitur yang tersedia, saya dapat melakukan registrasi dengan mencantumkan nama, alamat surel, dan kata sandi baru
+- Sebagai pengguna yang ingin mencari rumah makan, menu masakan, serta lokasi tempat makan, saya dapat memanfaatkan search bar yang ada pada halaman utama aplikasi
+- Sebagai pengguna yang telah terdaftar dan ingin ikut berkontribusi untuk mengembangkan database aplikasi, saya dapat menambah entri rumah makan beserta info seputar rumah makan yang bersangkutan
+- Sebagai pengguna yang telah terdaftar dan ingin menginfokan suatu rumah makan kepada pengguna lain, saya dapat memberikan penilaian berupa rating dan ulasan berupa komentar terhadap suatu rumah makan
+- Sebagai pengguna yang sedang mencari referensi rumah makan, saya dapat melihat berbagai menu dan galeri penampakan interior rumah makan pada detil entri rumah makan
+- Sebagai pengguna terdaftar yang ingin menyimpan daftar rumah makan favorit maupun rumah makan yang dihindari, saya dapat menambahkan kedua daftar tersebut pada info profil saya
+- Sebagai pengguna yang ingin mencari rumah makan dengan kategori-kategori tertentu, saya menginginkan adanya fitur yang dapat memfilter hasil pencarian
+- Sebagai pengguna yang ingin memesan makanan atau mereservasi tempat di rumah makan, saya dapat menghubungi pihak rumah makan melalui kontak yang tercantum pada detail entri rumah makan
+- Sebagai pengguna terdaftar yang ingin memberikan tanggapan terhadap ulasan dari pengguna lain, saya dapat menilai apakah ulasan dari pengguna lain tersebut membantu atau tidak
 # Spesifikasi Teknis Lingkungan Pengembangan
 ## Software
 * Operating system : Windows 10, Mac OS 
@@ -64,6 +73,15 @@ Kemajuan teknologi perangkat lunak serta berkembangnya paradigma masyarakat dala
 
 # Hasil dan Pembahasan
 ## Use Case Diagram
+![usecase](https://user-images.githubusercontent.com/78838446/121642373-a1127000-caba-11eb-9a50-90df89979398.PNG)
+
+## Use Case Description
+### Add Resto
+![usecasetabeladdresto](https://user-images.githubusercontent.com/78838446/121642462-bedfd500-caba-11eb-8a13-d3258b756ae2.PNG)
+### Review dan Rating
+![usecasetabelreview](https://user-images.githubusercontent.com/78838446/121642479-c69f7980-caba-11eb-8cbb-10b54b336012.PNG)
+### Add to Favorite
+![usecasetabelfavrt](https://user-images.githubusercontent.com/78838446/121642508-cef7b480-caba-11eb-97e3-acf34d423946.PNG)
 ## Activity Diagram
 ### Mendaftar Akun
 ![Activity Diagram-Register Akun](https://user-images.githubusercontent.com/65725044/121325450-cfb60c80-c93b-11eb-8895-8c36ee7319ed.png)
