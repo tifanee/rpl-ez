@@ -78,10 +78,10 @@ Target kami adalah food hunter dan masyarakat yang ingin membeli suatu makanan d
 ## Use Case Description
 ### Add Resto
 ![usecasetabeladdresto](https://user-images.githubusercontent.com/78838446/121642462-bedfd500-caba-11eb-8a13-d3258b756ae2.PNG)
-### Review dan Rating
-![usecasetabelreview](https://user-images.githubusercontent.com/78838446/121642479-c69f7980-caba-11eb-8cbb-10b54b336012.PNG)
-### Add to Favorite
-![usecasetabelfavrt](https://user-images.githubusercontent.com/78838446/121642508-cef7b480-caba-11eb-97e3-acf34d423946.PNG)
+### Menambah ulasan
+![usecasetabelreview](https://user-images.githubusercontent.com/78838446/121717138-0ee68800-cb0b-11eb-869d-5440942ea173.PNG)
+### Menambah penilaian
+![usecasetabelrateng](https://user-images.githubusercontent.com/78838446/121717210-20c82b00-cb0b-11eb-8b53-7398ea459cfb.PNG)
 ## Activity Diagram
 ### Mendaftar Akun
 ![Activity Diagram-Register Akun](https://user-images.githubusercontent.com/65725044/121325450-cfb60c80-c93b-11eb-8895-8c36ee7319ed.png)
@@ -95,6 +95,7 @@ Target kami adalah food hunter dan masyarakat yang ingin membeli suatu makanan d
 ![EzEats-Menambah penilaian resto](https://user-images.githubusercontent.com/65725044/121659023-18043480-cacc-11eb-90a8-063947d603b4.png)
 ## Class Diagram
 ## Entity Relationship Diagram (ERD)
+![ERD](https://user-images.githubusercontent.com/78838446/121718457-8963d780-cb0c-11eb-823a-81e51aa098de.PNG)
 ## Software Architecture
 ## Fungsi Utama yang Dikembangkan
 * User dapat membuat ulasan untuk restoran.
