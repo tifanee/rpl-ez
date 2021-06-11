@@ -87,6 +87,12 @@ Target kami adalah food hunter dan masyarakat yang ingin membeli suatu makanan d
 ![Activity Diagram-Register Akun](https://user-images.githubusercontent.com/65725044/121325450-cfb60c80-c93b-11eb-8895-8c36ee7319ed.png)
 ### Masuk Akun
 ![Activity Diagram-Sign In](https://user-images.githubusercontent.com/65725044/121325997-50750880-c93c-11eb-85de-495fb5f29faf.png)
+### Menambah Ulasan
+![EzEats-Menambah ulasan](https://user-images.githubusercontent.com/65725044/121656439-ac20cc80-cac9-11eb-9b52-fa11694ee805.png)
+### Menambah Resto Baru
+![EzEats-Menambah info restoran](https://user-images.githubusercontent.com/65725044/121656401-a4f9be80-cac9-11eb-9c28-72a3aeb5630c.png)
+### Menambah Penilaian
+![EzEats-Menambah penilaian resto](https://user-images.githubusercontent.com/65725044/121659023-18043480-cacc-11eb-90a8-063947d603b4.png)
 ## Class Diagram
 ## Entity Relationship Diagram (ERD)
 ## Software Architecture
