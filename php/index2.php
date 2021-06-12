@@ -81,7 +81,7 @@ $fname = explode(' ', $user["nama"])[0];
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto">
             <a class="nav-link active" id="Beranda" aria-current="page" href="index2.php?id=<?= $user["id"]; ?>">Beranda</a>
-            <a class="nav-link" id="Kategori" name="kategori" href="kategori2.php?id=<?= $user["id"]; ?>">Kategori</a>
+            <a class="nav-link" id="Kategori" name="kategori" href="kategori-loggedin.php?id=<?= $user["id"]; ?>">Kategori</a>
             <a class="nav-link" id="Photo" href="account.php?id=<?= $user["id"]; ?>"><img src="../database/img/user/<?= $user['gambar']; ?>"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>

@@ -47,7 +47,7 @@ if (isset($_POST["submit-cari"])) {
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav ms-auto">
                         <a class="nav-link active" id="Beranda" aria-current="page" href="index.php">Beranda</a>
-                        <a class="nav-link" id="Kategori" name="kategori" href="php/kategori.php">Kategori</a>
+                        <a class="nav-link" id="Kategori" name="kategori" href="php/kategori-loggedout.php">Kategori</a>
                         <a class="nav-link" id="SignUp" name="signup" href="php/signup.php?location=index.php">Sign Up</a>
                         <a class="btn btn-danger" id="SignIn" name="login" href="php/login.php?location=index.php" role="button">Sign In</a>
                     </div>
