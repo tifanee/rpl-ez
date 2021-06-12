@@ -37,7 +37,7 @@ Kemajuan teknologi perangkat lunak serta berkembangnya paradigma masyarakat dala
 
 # User Analisis
 ## User Profile
-Target kami adalah food hunter dan masyarakat yang ingin membeli suatu makanan dan tidak mengetahui letak tempat restorannya. Dengan ini juga para pedagang penjual makanan yang berada direstoran maupun toko dapat memasukkan data restorannya sehingga menjadi tempat promosi mereka.
+Target pengguna kami adalah masyarakat umum terutama food hunter. Masyarakat terutama para pemilik usaha kuliner dapat memasukkan data restorannya yang bisa menjadi menjadi tempat promosi mereka. Para user difasilitasi untuk menulis ulasan yang bisa membantu user lainnya dalam memilih restoran yang mereka ingin beli makanannya.
 ## User Story
 - Sebagai pengguna yang ingin menggunakan aplikasi, agar dapat terdaftar dalam aplikasi dan dapat menggunakan seluruh fitur yang tersedia, saya dapat melakukan registrasi dengan mencantumkan nama, alamat surel, dan kata sandi baru
 - Sebagai pengguna yang ingin mencari rumah makan, menu masakan, serta lokasi tempat makan, saya dapat memanfaatkan search bar yang ada pada halaman utama aplikasi
@@ -50,7 +50,6 @@ Target kami adalah food hunter dan masyarakat yang ingin membeli suatu makanan d
 - Sebagai pengguna terdaftar yang ingin memberikan tanggapan terhadap ulasan dari pengguna lain, saya dapat menilai apakah ulasan dari pengguna lain tersebut membantu atau tidak
 # Spesifikasi Teknis Lingkungan Pengembangan
 ## Software
-* Operating system : Windows 10, Mac OS 
 * Text Editor : VS Code
 * UI Design Tool : Figma
 * Database : PostgreSQL
