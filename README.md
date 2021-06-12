@@ -37,8 +37,17 @@ Kemajuan teknologi perangkat lunak serta berkembangnya paradigma masyarakat dala
 
 # User Analisis
 ## User Profile
+Target kami adalah food hunter dan masyarakat yang ingin membeli suatu makanan dan tidak mengetahui letak tempat restorannya. Dengan ini juga para pedagang penjual makanan yang berada direstoran maupun toko dapat memasukkan data restorannya sehingga menjadi tempat promosi mereka.
 ## User Story
-
+- Sebagai pengguna yang ingin menggunakan aplikasi, agar dapat terdaftar dalam aplikasi dan dapat menggunakan seluruh fitur yang tersedia, saya dapat melakukan registrasi dengan mencantumkan nama, alamat surel, dan kata sandi baru
+- Sebagai pengguna yang ingin mencari rumah makan, menu masakan, serta lokasi tempat makan, saya dapat memanfaatkan search bar yang ada pada halaman utama aplikasi
+- Sebagai pengguna yang telah terdaftar dan ingin ikut berkontribusi untuk mengembangkan database aplikasi, saya dapat menambah entri rumah makan beserta info seputar rumah makan yang bersangkutan
+- Sebagai pengguna yang telah terdaftar dan ingin menginfokan suatu rumah makan kepada pengguna lain, saya dapat memberikan penilaian berupa rating dan ulasan berupa komentar terhadap suatu rumah makan
+- Sebagai pengguna yang sedang mencari referensi rumah makan, saya dapat melihat berbagai menu dan galeri penampakan interior rumah makan pada detil entri rumah makan
+- Sebagai pengguna terdaftar yang ingin menyimpan daftar rumah makan favorit maupun rumah makan yang dihindari, saya dapat menambahkan kedua daftar tersebut pada info profil saya
+- Sebagai pengguna yang ingin mencari rumah makan dengan kategori-kategori tertentu, saya menginginkan adanya fitur yang dapat memfilter hasil pencarian
+- Sebagai pengguna yang ingin memesan makanan atau mereservasi tempat di rumah makan, saya dapat menghubungi pihak rumah makan melalui kontak yang tercantum pada detail entri rumah makan
+- Sebagai pengguna terdaftar yang ingin memberikan tanggapan terhadap ulasan dari pengguna lain, saya dapat menilai apakah ulasan dari pengguna lain tersebut membantu atau tidak
 # Spesifikasi Teknis Lingkungan Pengembangan
 ## Software
 * Operating system : Windows 10, Mac OS 
@@ -60,25 +69,38 @@ Kemajuan teknologi perangkat lunak serta berkembangnya paradigma masyarakat dala
 ## Lainnya
 * Version Control System : Github
 * Project Management : Trello
-* Software Documentation
+* Software Documentation : Google Sites
 
 # Hasil dan Pembahasan
 ## Use Case Diagram
+![usecase](https://user-images.githubusercontent.com/78838446/121642373-a1127000-caba-11eb-9a50-90df89979398.PNG)
+
+## Use Case Description
+### Add Resto
+![usecasetabeladdresto](https://user-images.githubusercontent.com/78838446/121642462-bedfd500-caba-11eb-8a13-d3258b756ae2.PNG)
+### Menambah ulasan
+![usecasetabelreview](https://user-images.githubusercontent.com/78838446/121717138-0ee68800-cb0b-11eb-869d-5440942ea173.PNG)
+### Menambah penilaian
+![usecasetabelrateng](https://user-images.githubusercontent.com/78838446/121717210-20c82b00-cb0b-11eb-8b53-7398ea459cfb.PNG)
 ## Activity Diagram
 ### Mendaftar Akun
 ![Activity Diagram-Register Akun](https://user-images.githubusercontent.com/65725044/121325450-cfb60c80-c93b-11eb-8895-8c36ee7319ed.png)
 ### Masuk Akun
 ![Activity Diagram-Sign In](https://user-images.githubusercontent.com/65725044/121325997-50750880-c93c-11eb-85de-495fb5f29faf.png)
+### Menambah Ulasan
+![EzEats-Menambah ulasan](https://user-images.githubusercontent.com/65725044/121656439-ac20cc80-cac9-11eb-9b52-fa11694ee805.png)
+### Menambah Resto Baru
+![EzEats-Menambah info restoran](https://user-images.githubusercontent.com/65725044/121656401-a4f9be80-cac9-11eb-9c28-72a3aeb5630c.png)
+### Menambah Penilaian
+![EzEats-Menambah penilaian resto](https://user-images.githubusercontent.com/65725044/121659023-18043480-cacc-11eb-90a8-063947d603b4.png)
 ## Class Diagram
 ## Entity Relationship Diagram (ERD)
+![ERD](https://user-images.githubusercontent.com/78838446/121718457-8963d780-cb0c-11eb-823a-81e51aa098de.PNG)
 ## Software Architecture
 ## Fungsi Utama yang Dikembangkan
-* User dapat mendaftar terlebih dahulu mengunakan alamat email di website EzEats untuk menggunakan fitur-fitur yang ada.
 * User dapat membuat ulasan untuk restoran.
-* User dapat menambah dan menghapus favorit restoran.
-* User dapat menambah dan mengubah info restoran.
-* User dapat menyukai (merasa terbantu) oleh ulasan user lain.
-* User dapat melihat-lihat info restoran yang ada.
+* User dapat menambah info restoran.
+* User dapat memberi penilaian pada restoran.
 ## Fungsi CRUD
 ### Create
 * Membuat akun pada aplikasi web EzEats
@@ -101,19 +123,27 @@ Kemajuan teknologi perangkat lunak serta berkembangnya paradigma masyarakat dala
 * Menghapus riwayat resto yang baru dilihat
 # Hasil Implementasi
 ## Link Aplikasi
-
-# Testing
+Demo aplikasi dapat diakses pada link : *insert link*
+# Testing (Test Cases)
 Kami melakukan pengujian secara manual (manual testing) tanpa menggunakan bantuan tools atau scripts, tujuannya adalah untuk memastikan aplikasi bebas dari bugs/error dan memastikan dapat bekerja sesuai dengan yang diharapkan.
 
 ## Positive Case
 Pengujian Positif merupakan jenis pengujian yang dilakukan pada aplikasi perangkat lunak dengan memberikan kumpulan data yang valid sebagai input.
-
+| No |   Scenario  | Pre-requisites | Steps | Expected Result | Actual Result | Status |
+| -- | ----------- | -------------- | ----- | --------------- | ------------- | ------ |
+| 1  | User login dengan akun yang valid | User mengakses website EzEats | Pergi ke halaman Masuk, masukkan email dan password, klik masuk | Login berhasil dan user diarahkan ke home | d | e |
+| 2  | User mendaftar nama lengkap, email, dan password yang valid | User mengakses website EzEats | Pergi ke halaman daftar, masukkan nama, alamat email, password, dan konfirmasi password, lalu klik daftar | Daftar berhasil | d | e |
+| 3  | Edit info user di edit profile | User mengakses website EzEats | b | c | d | e |
+| 4  | Menambah ulasan restoran | User mengakses website EzEat | b | Berhasil menambahkan ulasan | d | e |
 ## Negative Case
 Pengujian Negatif adalah metode pengujian yang dilakukan pada aplikasi perangkat lunak dengan memberikan kumpulan data yang tidak valid atau tidak tepat sebagai input.
 
 # Kesimpulan
-Dengan rentang waktu pengembangan aplikasi yang terbatas, tim Kami berhasil membangun sistem yang diharapkan walaupun masih jauh dari kata sempurna.
+Dengan rentang waktu pengembangan aplikasi yang terbatas, tim kami berhasil membangun sistem yang diharapkan walaupun masih jauh dari kata sempurna.
 
 # Saran untuk Pengembangan Berikutnya
 
 # Ucapan Terima Kasih
+Selama pengembangan website EzEats ini, tim kami banyak mempelajari hal-hal baru dalam bidang pengembangan perangkat lunak. Maka dari itu, kami ingin mengucapkan terima kasih kepada :
+1. Para dosen Ilmu Komputer IPB terutama dosen-dosen mata kuliah Rekayasa Perangkat Lunak karena telah memberikan ilmu kepada kami
+2. Para asisten praktikum karena telah memberikan masukan dan saran selama pengembangan website EzEats
