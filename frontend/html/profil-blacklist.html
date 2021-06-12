@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
   <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>
-  <link rel="stylesheet" type="text/css" href="../css/profil-favorit.css">
+  <link rel="stylesheet" type="text/css" href="../css/profil-blacklist.css">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,1200" />
   <title>Park Ji-hyo - EzEats</title>
 </head>
@@ -83,14 +83,14 @@
             <div class="items last user-reviews"><a href="profil-ulasan.html">Ulasan</a></div>           
           </div>
           <div class="sidebar collection"><span class="active">Koleksi Saya</span>
-            <div class="items favorite-resto active"><a href="#">Favorit</a></div>
-            <div class="items last black-listed"><a href="profil-blacklist.html">Daftar Hitam</a></div>
+            <div class="items favorite-resto"><a href="profil-favorit.html">Favorit</a></div>
+            <div class="items last black-listed active"><a href="#">Daftar Hitam</a></div>
           </div>
         </div>
         <div class="col-9">
           <div class="rating-cards">
             <form class="d-flex tab-searchbar">
-              <input class="form-control inputbox-recommended" type="search" placeholder="Cari Resto Favorit"
+              <input class="form-control inputbox-recommended" type="search" placeholder="Cari Resto Daftar Hitam"
                 aria-label="Search">
               <button class="btn btn-outline-danger" type="submit"><i class="bi bi-search "></i></button>
             </form>        
@@ -104,15 +104,15 @@
                     <div class="card-rating"><i class="bi bi-hand-thumbs-up pl-2"></i><strong>76%</strong> (87 Penilaian)</div>
                     <div class="card-address"><i class="bi bi-geo-alt"></i>Dramaga, Kab. Bogor</div>
                     <div class="d-flex user-rating fav" id="">
-                      <span class="icon"><i class="bi bi-heart-fill"></i></span>
-                      <span class="info">Resto Favorit</span>
+                      <span class="icon"><i class="bi bi-dash-circle-fill"></i></i></span>
+                      <span class="info">Daftar Hitam</span>
                     </div>
                     <div class="btn-group dropstart">
                       <a class="btn btn-light" href="#" role="button" 
                         id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="bi bi-three-dots-vertical"></i></a>                        
                       <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">Hapus dari Favorit</a></li>                            
+                        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">Hapus dari Daftar Hitam</a></li>                            
                       </ul>
                     </div>
                   </div>
@@ -132,15 +132,15 @@
                     <div class="card-rating"><i class="bi bi-hand-thumbs-up pl-2"></i><strong>80%</strong> (120 Penilaian)</div>
                     <div class="card-address"><i class="bi bi-geo-alt"></i>Bogor Tengah, Kota Bogor</div>
                     <div class="d-flex user-rating fav" id="">
-                      <span class="icon"><i class="bi bi-heart-fill"></i></span>
-                      <span class="info">Resto Favorit</span>
+                      <span class="icon"><i class="bi bi-dash-circle-fill"></i></i></span>
+                      <span class="info">Daftar Hitam</span>
                     </div>
                     <div class="btn-group dropstart">
                       <a class="btn btn-light" href="#" role="button" 
                         id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="bi bi-three-dots-vertical"></i></a>                        
                       <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">Hapus dari Favorit</a></li>                            
+                        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">Hapus dari Daftar Hitam</a></li>                            
                       </ul>
                     </div>
                   </div>
@@ -160,15 +160,15 @@
                     <div class="card-rating"><i class="bi bi-hand-thumbs-up pl-2"></i><strong>92%</strong> (157 Penilaian)</div>
                     <div class="card-address"><i class="bi bi-geo-alt"></i>Kebayoran Baru, Kota Jakarta Selatan</div>
                     <div class="d-flex user-rating fav" id="">
-                      <span class="icon"><i class="bi bi-heart-fill"></i></span>
-                      <span class="info">Resto Favorit</span>
+                      <span class="icon"><i class="bi bi-dash-circle-fill"></i></i></span>
+                      <span class="info">Daftar Hitam</span>
                     </div>
                     <div class="btn-group dropstart">
                       <a class="btn btn-light" href="#" role="button" 
                         id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="bi bi-three-dots-vertical"></i></a>                        
                       <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">Hapus dari Favorit</a></li>                            
+                        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">Hapus dari Daftar Hitam</a></li>                            
                       </ul>
                     </div>
                   </div>
@@ -192,7 +192,7 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                  <h6>Apakah Anda Yakin Ingin Menghapus Resto ini dari Daftar Favorit?</h6>
+                  <h6>Apakah Anda Yakin Ingin Menghapus Resto ini dari Daftar Hitam?</h6>
                 </div>
                 <div class="d-flex modal-footer justify-content-between">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
@@ -205,7 +205,7 @@
             <div class="modal-dialog modal-dialog-centered modal-lg">
               <div class="modal-content">               
                 <div class="modal-body">
-                  <h6>Resto Telah Berhasil Dihapus dari Daftar Favorit!</h6>
+                  <h6>Resto Telah Berhasil Dihapus dari Daftar Hitam!</h6>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary close-modal2" data-bs-dismiss="modal">Mengerti</button>                      

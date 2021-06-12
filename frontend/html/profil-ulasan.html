@@ -84,7 +84,7 @@
           </div>
           <div class="sidebar collection"><span class="">Koleksi Saya</span>
             <div class="items favorite-resto"><a href="profil-favorit.html">Favorit</a></div>
-            <div class="items last black-listed"><a href="">Daftar Hitam</a></div>
+            <div class="items last black-listed"><a href="profil-blacklist.html">Daftar Hitam</a></div>
           </div>
         </div>
         <div class="col-9">
@@ -115,7 +115,19 @@
                     yang ada disuguhin makanan se-engga enak ini! Balikin duit dan
                     waktu gua, Gak mau tau!! >:(
                   </p>
-                </div>                    
+                </div>
+                <div class="img-wrap">
+                  <img src="../img/user-reviews/mcd-01.jpg" alt="Rasanya kayak Ketek Gorila" class="review-image">
+                </div>
+                <div class="btn-group dropstart">
+                  <a class="btn btn-light" href="#" role="button" 
+                    id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-pencil-fill"></i></a>                        
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modal-edit">Edit Ulasan</a></li>
+                    <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete-modal">Hapus Ulasan</a></li>                            
+                  </ul>
+                </div>                        
               </div> 
               <div class="card-bottom">
                 <div class="row justify-content-between">
@@ -150,7 +162,19 @@
                     energi tu seolah terisi lagi. Varian rasanya juga banyak, jadi kita 
                     engga akan gampang bosen. Gudjob deh pokoknya.
                   </p>
-                </div>                    
+                </div>
+                <div class="img-wrap">
+                  <img src="../img/user-reviews/susudarmi-01.jpg" alt="Seger Bangett!" class="review-image">
+                </div>
+                <div class="btn-group dropstart">
+                  <a class="btn btn-light" href="#" role="button" 
+                    id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-pencil-fill"></i></a>                        
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modal-edit">Edit Ulasan</a></li>
+                    <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete-modal">Hapus Ulasan</a></li>                            
+                  </ul>
+                </div>                           
               </div> 
               <div class="card-bottom">
                 <div class="row justify-content-between">
@@ -187,7 +211,19 @@
                     sih standar-standar aja buat aku. Pokoknya engga akan nyesel deh kalo
                     makan di sini. Pelayannya ramah-ramah dan jago bahasa Inggris :)
                   </p>
-                </div>                    
+                </div>
+                <div class="img-wrap">
+                  <img src="" alt="" class="review-image">
+                </div>
+                <div class="btn-group dropstart">
+                  <a class="btn btn-light" href="#" role="button" 
+                    id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-pencil-fill"></i></a>                        
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modal-edit">Edit Ulasan</a></li>
+                    <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete-modal">Hapus Ulasan</a></li>                            
+                  </ul>
+                </div>                           
               </div> 
               <div class="card-bottom">
                 <div class="row justify-content-between">
@@ -196,11 +232,158 @@
                 </div>
               </div>
             </div>
-
-
-
-
           </div>
+
+          <div id="images-modal" class="modal zoom-image">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img-zoom">
+            <div id="caption"></div>
+          </div>
+
+          <div class="modal modal-edit fade" id="modal-edit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">
+                    Edit Ulasan Anda
+                  </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="container">
+                    <form>
+                      <div class="mb-3">
+                        <label for="review-title" class="col-form-label">Judul Ulasan</label>
+                        <input type="text" class="form-control" id="review-title" placeholder="Maksimal 35 Karakter"
+                          maxlength="35" />
+                      </div>
+                      <div class="mb-3">
+                        <label for="review-description" class="col-form-label">Deskripsi Ulasan</label>
+                        <textarea class="form-control" oninput="auto_grow(this)" id="review-description"
+                          placeholder="Maksimal 2000 Karakter" maxlength="2000"></textarea>
+                        <script>
+                          function auto_grow(element) {
+                            element.style.height = "5px";
+                            element.style.height = element.scrollHeight + "px";
+                          }
+                        </script>
+                      </div>
+                      <div class="mb-3">
+                        <label for="review-attachment" class="col-form-label">Tambahkan Gambar</label><br />
+                        <input type="file" id="upload-file" name="filename" accept="image/jpg image/jpeg image/png" />
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <div class="container">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                      Tutup
+                    </button>
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" 
+                      data-bs-dismiss="modal" data-bs-target="#modal-edit-2">Simpan</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal modal-edit fade" id="modal-edit-2" tabindex="-1" aria-labelledby="staticBackdropLabel2">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+              <div class="modal-content">               
+                <div class="modal-body">
+                  <h6>Ulasan Anda Telah Berhasil Diubah!</h6>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary close-modal2" data-bs-dismiss="modal">Mengerti</button>                      
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal modal-delete fade" id="delete-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabe1">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel1">Konfirmasi Menghapus</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h6>Apakah Anda Yakin Ingin Menghapus Ulasan Resto Ini?</h6>
+                </div>
+                <div class="d-flex modal-footer justify-content-between">              
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                  <button type="button" class="btn btn-danger open-modal2" data-bs-toggle="modal" 
+                      data-bs-dismiss="modal" data-bs-target="#delete-modal-2">Hapus</button>             
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <div class="modal modal-delete fade" id="delete-modal-2" tabindex="-1" aria-labelledby="staticBackdropLabel2">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+              <div class="modal-content">               
+                <div class="modal-body">
+                  <h6>Ulasan Anda Telah Berhasil Dihapus!</h6>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary close-modal2" data-bs-dismiss="modal">Mengerti</button>                      
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <script>
+            // If src Null, Div Hide
+            $('img[src=""]').parents('.img-wrap').hide();
+
+            // create references to the modal...
+            var modal = document.getElementById('images-modal');
+            // to all images -- note I'm using a class!
+            var images = document.getElementsByClassName('review-image');
+            // the image in the modal
+            var modalImg = document.getElementById("img-zoom");
+            // and the caption in the modal
+            var captionText = document.getElementById("caption");
+
+            // Go through all of the images with our custom class
+            for (var i = 0; i < images.length; i++) {
+              var img = images[i];
+              // and attach our click listener for this image.
+              img.onclick = function(evt) {
+                modal.style.display = "flex";
+                modal.style.flexDirection = "column";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+              }
+            }
+
+            var span = document.getElementsByClassName("close")[0];
+
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+
+          </script>
+
+           <!--Start of Pagination-->
+           <nav aria-label="Page navigation">
+            <ul class="pagination justify-content-center">
+              <li class="page-item">
+                <a class="page-link" href="#"><i class="bi bi-chevron-double-left"></i></a>
+              </li>
+              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#"><i class="bi bi-chevron-double-right"></i></a>
+              </li>
+            </ul>
+          </nav>
+  
+          <!--End of Pagination--> 
+
         </div>
 
       </div>
