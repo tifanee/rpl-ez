@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=0.35" />
@@ -27,13 +28,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <form class="
-                d-inline-flex
-                flex-fill
-                justify-content-center
-                align-items-center
-                searchbar
-              ">
+          <form class="d-inline-flex flex-fill justify-content-center align-items-center searchbar">
             <input class="form-control me-2 inputbox" type="search" placeholder="Mau makan apa hari ini?"
               aria-label="Search" />
             <button class="btn btn-outline-danger" type="submit">
@@ -109,8 +104,8 @@
           </button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="menu-tab" data-bs-toggle="tab" data-bs-target="#menu" type="button" role="tab"
-            aria-controls="menu" aria-selected="false">
+          <button class="nav-link" id="menu-tab" data-bs-toggle="tab" data-bs-target="#menus" type="button" role="tab"
+            aria-controls="menus" aria-selected="false">
             Menu
           </button>
         </li>
@@ -152,11 +147,11 @@
               </div>
             </div>
 
-<!-- Start of Bikinan Tipa-->            
+            <!-- Start of Bikinan Tipa-->
 
             <!--Start of Modal Edit Info-->
             <button type="button" class="btn-editresto" data-bs-toggle="modal" data-bs-target="#exampleModal">
-              Edit Info Restoran
+              Edit Info Restoran <span class="me-2"></span> <i class="bi bi-pencil-fill"></i>
             </button>
             <!--Scrollable Modal-->
             <div class="modal fade edit-resto" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -172,23 +167,12 @@
                   <div class="modal-body">
                     <h4>Detail Restoran</h4>
                     <div class="mb-3">
-                      <label for="formRestoData" class="form-label">Nama Restoran</label>
-                      <input style="font-size: 16px" type="text" class="form-control add-resto" id="formRestoData-name"
-                        value="" required />
+                      <label for="formRestoEdit" class="form-label">Nama Restoran</label>
+                      <input type="text" class="form-control form-edit-resto" id="formRestoEdit-name" required />
                     </div>
                     <div class="mb-3">
-                      <label for="formRestoData" class="form-label">No. Telepon</label>
-                      <input style="font-size: 16px" type="tel" class="form-control add-resto" id="formRestoData-notelp"
-                        value="" />
-                    </div>
-                    <div class="mb-3">
-                      <label for="formRestoData" class="form-label">Website</label>
-                      <input style="font-size: 16px" type="url" class="form-control add-resto" id="formRestoData-notelp"
-                        value="" />
-                    </div>
-                    <div class="mb-3">
-                      <label for="formRestoData" class="form-label">Kategori</label>
-                      <select class="form-select">
+                      <label for="formRestoEdit" class="form-label">Kategori</label>
+                      <select class="form-select form-edit-resto" id="formRestoEdit-category" required>
                         <option selected disabled></option>
                         <option value="Fast-Food">Cepat Saji</option>
                         <option value="Indonesian">Kuliner Indonesia</option>
@@ -201,81 +185,88 @@
                       </select>
                     </div>
                     <div class="mb-3">
-                      <label for="formRestoData" class="form-label">Waktu Buka</label>
-                      <br />
-                      <input class="form-jambuka" type="time" id="formRestoData-jambuka" name="jambuka" min="00:00"
-                        max="23:59" value="" required />
+                      <label for="formRestoEdit" class="form-label">No. Telepon</label>
+                      <input type="tel" class="form-control form-edit-resto" id="formRestoEdit-phone"/>
                     </div>
                     <div class="mb-3">
-                      <label for="formRestoData" class="form-label">Waktu Tutup</label>
-                      <br />
-                      <input class="form-jambuka" type="time" id="formRestoData-jamtutup" name="jamtutup" min="00:00"
-                        max="23:59" value="" required />
+                      <label for="formRestoEdit" class="form-label">Website</label>
+                      <input type="url" class="form-control form-edit-resto" id="formRestoEdit-website"/>
+                    </div>                    
+                    <div class="mb-3">
+                      <label for="formRestoEdit" class="form-label">Waktu Buka</label>                      
+                      <input class="form-control form-edit-resto" type="time" id="formRestoEdit-open" min="00:00" max="23:59" required />
                     </div>
                     <div class="mb-3">
-                      <label for="formRestoData" class="form-label">Rentang Harga</label>
-                      <input style="font-size: 16px" type="text" class="form-control add-resto" id="formRestoData-harga"
-                        placeholder="eg: 50.000-100.000" value="" required />
+                      <label for="formRestoEdit" class="form-label">Waktu Tutup</label>                    
+                      <input class="form-control form-edit-resto" type="time" id="formRestoEdit-close"  min="00:00" max="23:59" required />
                     </div>
                     <div class="mb-3">
-                      <label for="formRestoData" class="form-label">Fasilitas</label>
-                      <input style="font-size: 16px" type="text" class="form-control add-resto"
-                        id="formRestoData-fasilitas" value="" required />
+                      <label for="formRestoEdit" class="form-label">Rentang Harga</label>
+                      <input type="text" class="form-control form-edit-resto" id="formRestoEdit-price" required />
                     </div>
                     <div class="mb-3">
-                      <label for="formRestoData" class="form-label">Deskripsi</label>
+                      <label for="formRestoEdit" class="form-label">Fasilitas</label>
+                      <input type="text" class="form-control form-edit-resto" id="formRestoEdit-facilities" required />
+                    </div>
+                    <div class="mb-3">
+                      <label for="formRestoEdit" class="form-label">Deskripsi</label>
                       <div class="form-floating">
-                        <textarea style="font-size: 16px" class="form-control add-resto" placeholder="Deskripsi"
-                          id="formRestoData-desk" style="height: 100px" value=""></textarea>
+                        <textarea class="form-control form-edit-resto" id="formRestoEdit-desc"></textarea>
                       </div>
                     </div>
-                    <label for="formRestoData" class="form-label">Foto Restauran</label>
-                    <div class="input-group">
-                      <input style="font-size: 16px" type="file" class="form-control" id="input-fotoresto" multiple />
+                    <div class="mb-3">
+                      <label for="formRestoEdit" class="form-label">Foto Restauran</label>
+                      <div class="input-group">
+                        <input type="file" style="font-weight: 400;" class="form-control form-edit-resto" id="formRestoEdit-image" accept="image/png, image/jpg, image/jpeg"/>
+                      </div>
                     </div>
-                    <label for="formRestoData" class="form-label">Foto Menu</label>
-                    <div class="input-group">
-                      <input style="font-size: 16px" type="file" class="form-control" id="input-menuresto" multiple />
-                    </div>
-                    <br />
+                    <div class="mb-3">
+                      <label for="formRestoEdit" class="form-label">Foto Menu</label>
+                      <div class="input-group">
+                        <input type="file" style="font-weight: 400; margin-bottom: 70px;" class="form-control form-edit-resto" id="formRestoEdit-menu" accept="image/png, image/jpg, image/jpeg" multiple />
+                      </div>
+                    </div>  
 
                     <!--Alamat Resto-->
                     <h4>Alamat Restoran</h4>
                     <div class="mb-3">
-                      <label for="formRestoData" class="form-label">Nama Jalan</label>
-                      <input style="font-size: 16px" type="text" class="form-control add-resto"
-                        id="formRestoData-namajalan" placeholder="Jl..." required />
+                      <label for="formRestoEdit" class="form-label">Nama Jalan</label>
+                      <input type="text" class="form-control form-edit-resto" id="formRestoEdit-street" required />
                     </div>
                     <div class="mb-3">
-                      <label for="formRestoData" class="form-label">Nama Kecamatan</label>
-                      <input style="font-size: 16px" type="text" class="form-control add-resto" id="formRestoData-kec"
-                        required />
+                      <label for="formRestoEdit" class="form-label">Kecamatan</label>
+                      <input type="text" class="form-control form-edit-resto" id="formRestoEdit-region" required />
+                    </div>                    
+                    <div class="mb-3">                      
+                      <label for="formRestoEdit" class="d-block form-label">Kabupaten/Kota</label>
+                      <div class="input-group">
+                        <select class="form-select form-edit-resto">
+                          <option selected disabled></option>
+                          <option value="Kabupaten">Kabupaten</option>
+                          <option value="Kota">Kota</option>
+                        </select>
+                        <input type="text" style="width: 40%;" class="form-control form-edit-resto" id="formRestoEdit-region" required />
+                      </div>
                     </div>
                     <div class="mb-3">
-                      <label for="formRestoData" class="form-label">Kabupaten/Kota</label>
-                      <select class="form-select">
-                        <option selected disabled></option>
-                        <option value="Kabupaten">Kabupaten</option>
-                        <option value="Kota">Kota</option>
-                      </select>
+                      <label for="formRestoEdit" class="form-label">Provinsi</label>
+                      <input type="text" class="form-control form-edit-resto" id="formRestoEdit-province" required />
                     </div>
-                    <div class="mb-3">
-                      <label for="formRestoData" class="form-label">Nama Kabupaten/Kota</label>
-                      <input style="font-size: 16px" type="text" class="form-control add-resto"
-                        id="formRestoData-kabkota" required />
+                    <div class="validation form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="CheckDefault" 
+                        onchange="document.getElementById('submit-button').disabled = !this.checked;">
+                      <label class="form-check-label" for="CheckDefault">
+                        Saya mengisi data di atas dengan sejujur-jujurnya tanpa adanya niat untuk memberikan informasi 
+                        palsu dan SIAP untuk menerima hukuman apabila saya melanggar peraturan dan tata tertib yang berlaku.
+                      </label>
                     </div>
-                    <div class="mb-3">
-                      <label for="formRestoData" class="form-label">Provinsi</label>
-                      <input style="font-size: 16px" type="text" class="form-control add-resto" id="formRestoData-prov"
-                        required />
-                    </div>
-                  </div>
+                  </div>             
                   <div class="modal-footer">
                     <div class="container">
                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
                         Tutup
                       </button>
-                      <button type="button" class="btn btn-danger">
+                      <button type="button" class="btn btn-danger" name="submit-button"  id="submit-button" disabled>
                         Simpan
                       </button>
                     </div>
@@ -284,8 +275,8 @@
               </div>
             </div>
             <!--End of Scrollable Modal-->
-            
-<!-- End of Bikinan Tipa-->   
+
+            <!-- End of Bikinan Tipa-->
           </div>
         </div>
         <div class="tab-pane fade" id="description" role="tabpanel" aria-labelledby="descript-tab">
@@ -329,8 +320,41 @@
             serta memberikan manfaat yang besar bagi masyarakat Indonesia.
           </div>
         </div>
-        <div class="tab-pane fade" id="menu" role="tabpanel" aria-labelledby="menu-tab">
-          TBA.
+        <div class="tab-pane fade" id="menus" role="tabpanel" aria-labelledby="menu-tab">
+          <div class="container">
+            <div class="d-flex row justify-content-start">
+              <div class="col-lg-4 col-xl-3">
+                <div class="menu image-wrap">
+                  <img src="../img/menus/menu-mcd-1.jpg" alt="">
+                </div>                
+              </div>
+              <div class="col-lg-4 col-xl-3">
+                <div class="menu image-wrap">
+                  <img src="../img/menus/menu-mcd-2.jpg" alt="">
+                </div>                
+              </div>
+              <div class=" col-lg-4 col-xl-3">
+                <div class="menu image-wrap">
+                  <img src="../img/menus/menu-mcd-3.jpg" alt="">
+                </div>                
+              </div>
+              <div class="col-lg-4 col-xl-3">
+                <div class="menu image-wrap">
+                  <img src="../img/menus/menu-mcd-4.jpg" alt="">
+                </div>                
+              </div>
+              <div class=" col-lg-4 col-xl-3">
+                <div class="menu image-wrap">
+                  <img src="../img/menus/menu-mcd-5.jpg" alt="">
+                </div>                
+              </div>
+              <div class="col-lg-4 col-xl-3">
+                <div class="menu image-wrap">
+                  <img src="../img/menus/menu-mcd-6.jpg" alt="">
+                </div>                
+              </div>              
+            </div>
+          </div>          
         </div>
         <div class="tab-pane fade" id="gallery" role="tabpanel" aria-labelledby="gallery-tab">
           TBA.
@@ -342,12 +366,12 @@
         firstTab.show()
       </script>
 
-      <div class="button">
+      <div class="button-fav">
         <button type="button" class="btn btn-danger" id="favorite-button" data-bs-toggle="modal"
-          data-bs-target="#favorite-modal"><i class="bi bi-heart-fill"></i>Tambah ke Favorit</button>
+          data-bs-target="#favorite-modal"><i class="bi bi-heart-fill"></i>Favoritkan</button>
       </div>
 
-      <div class="modal fade" id="favorite-modal" tabindex="-1" aria-labelledby="staticBackdropLabel">
+      <div class="modal modal-fav fade" id="favorite-modal" tabindex="-1" aria-labelledby="staticBackdropLabel">
         <div class="modal-dialog modal-dialog-centered modal-lg">
           <div class="modal-content">
             <div class="modal-header">
@@ -361,6 +385,46 @@
           </div>
         </div>
       </div>
+
+      <div class="button-black">
+        <button type="button" class="btn btn-dark" id="blacklist-button" data-bs-toggle="modal"
+          data-bs-target="#blacklist-modal"><i class="bi bi-dash-circle-fill"></i>Daftar Hitam</button>
+      </div>
+
+      <div class="modal modal-black fade" id="blacklist-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabe2">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel1">Konfirmasi Daftar Hitam</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h6>Apakah Anda Yakin Ingin Menambahkan Resto ini ke Daftar Hitam?</h6>
+            </div>
+            <div class="d-flex modal-footer justify-content-between">              
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+              <button type="button" class="btn btn-danger open-modal2" data-bs-toggle="modal" 
+                  data-bs-dismiss="modal" data-bs-target="#blacklist-modal-2">Tambah</button>             
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal modal-black fade" id="blacklist-modal-2" tabindex="-1" aria-labelledby="staticBackdropLabe3">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabe3"> <i class="bi bi-dash-circle-fill"></i></i>Restoran telah
+                ditambahkan ke <a href="">Daftar Hitam</a>!</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h6>Restoran dapat Dihapus dari Daftar Hitam pada <a href="">Menu Profil</a>.</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
 
   </div>
@@ -381,11 +445,9 @@
     </a>
   </div>
   <!--Start of Modal-->
-  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  <div class="modal fade add-review" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
     aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="
-          modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg
-        ">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="staticBackdropLabel">
@@ -432,6 +494,7 @@
   </div>
   <!--End of Modal-->
   <!--End of User Ratings and Reviews-->
+
 
   <!--Start of Reviews-->
   <div class="container">

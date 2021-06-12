@@ -97,11 +97,11 @@
           </div>
           <div class="sidebar collection"><span class="">Koleksi Saya</span>
             <div class="items favorite-resto"><a href="profil-favorit.html">Favorit</a></div>
-            <div class="items last black-listed"><a href="">Daftar Hitam</a></div>
+            <div class="items last black-listed"><a href="profil-blacklist.html">Daftar Hitam</a></div>
           </div>
         </div>
 
-        <div class="col-8 form">
+        <div class="col-8 form information">
           <div class="row title">
             <div class="col-auto me-auto"><h4>Informasi Pribadi</h4></div>
             <div class="col-auto"><a href="#" id="edit-info" type="button" class="btn btn-danger"><i class="bi bi-pencil-square"></i></a></div>
@@ -114,7 +114,7 @@
             
             <div class="col-10 mb-3">
               <label for="formUserData" class="form-label">Deskripsi Singkat</label>
-              <input type="text" class="form-control edit-info" id="formUserData-nick" placeholder="" value="Fancy Foodie, Entertainer">
+              <input type="text" class="form-control edit-info" id="formUserData-nick" placeholder="e.g. Food Hunter, Sweets Lover, Entertainer" value="Fancy Foodie, Entertainer">
             </div>
             
             <div class="col-10 mb-3">
@@ -132,6 +132,12 @@
               <input type="text" class="form-control edit-info" id="formUserData-address" placeholder="" value="05407 205, Gangdong-daero, Gangdong-gu, Seoul">
             </div>
           </form>
+          <a href="#" id="save-info" type="button" class="btn btn-danger float-end">Simpan Informasi</a>
+        </div>
+
+        <div class="col-3 empty"></div>
+
+        <div class="col-8 form password-change">  
           <div class="row title">
             <div class="col-auto me-auto"><h4>Ganti Password</h4></div>
             <div class="col-auto"><a href="#" id="edit-password" type="button" class="btn btn-danger">
@@ -154,7 +160,7 @@
               <div style="position: absolute;" id='message'></div>
             </div>
           </form>            
-          <a href="#" id="save-button" type="button" class="btn btn-danger float-end">Simpan Perubahan</a>
+          <a href="#" id="save-password" type="button" class="btn btn-danger float-end">Simpan Password</a>
           <script>
             $('#newPassword, #confirmPassword').on('keyup', function () {
               if ($('#newPassword').val().length > 7) {
@@ -179,17 +185,22 @@
                 $('.edit-password').attr('disabled', false);
             })
 
-            $('#save-button').on('click', function(e) {
+            $('#save-info').on('click', function(e) {
                 
-                $('.edit-info','.edit-password').attr('disabled', true);
+                $('.edit-info').attr('disabled', true);
+            });
+            $('#save-password').on('click', function(e) {
+                
+                $('.edit-password').attr('disabled', true);
             });
           </script>
           
         </div>
 
       </div>
-    </div>
-      
+      <br><br><br>
+
+    </div>      
   </div>
   <!--End of Restaurant Info-->
 

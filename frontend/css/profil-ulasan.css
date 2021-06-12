@@ -1,6 +1,6 @@
 body {
     font-family: Lato;
-    background-color: #EEEEEE;
+    background-image: url(../img/background/bg-texture.jpg);
 }
 
 /* #Navigation Bar */
@@ -232,7 +232,239 @@ body {
 }
 .card .detail {
     font-size: 19px;
+    margin-bottom: 40px;
 }
+.card .card-body .img-wrap {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+    width: 320px;
+    border-radius: 8px;
+    transform: .3s;
+}
+.card .card-body .img-wrap:hover {
+    -webkit-box-shadow: 0 5px 15px rgba(153, 153, 153, 0.75);
+    box-shadow: 0 5px 15px rgba(153, 153, 153, 0.75);
+}
+.card .card-body .img-wrap img {
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+}
+.card .card-body .img-wrap img:hover {
+    transform: scale(1.1);
+    transition: transform .3s;
+}
+.card .card-body .img-wrap .review-image {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}  
+.card .card-body .img-wrap .review-image:hover {
+    opacity: 0.85;
+}
+.profile-body .modal.zoom-image {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 4;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.85);
+    /* Black w/ opacity */
+}
+.profile-body .modal.zoom-image .modal-content {
+    margin: 10px auto;
+    max-width: 800px;
+    max-height: 600px;
+    border-radius: 15px;
+    align-items: center;
+}
+.profile-body .modal.zoom-image .modal-content img {
+    margin: auto;
+    object-fit: scale-down;
+    object-position: center;
+    size: 100%;
+}  
+.profile-body .modal.zoom-image #caption {
+    margin: 35px auto ;
+    text-align: center;
+    color: #ccc;
+    font-weight: 700;
+    font-size: 21px;
+    padding: 0;
+    max-height: 30px;
+    align-items: flex-start;
+}
+.profile-body .modal.zoom-image .modal-content,
+#caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+ }  
+@keyframes zoom {
+    from {
+      transform: scale(0)
+    }
+    to {
+      transform: scale(1)
+    }
+}  
+.profile-body .modal.zoom-image .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}  
+.modal.zoom-image .close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}  
+@media only screen and (max-width: 700px) {
+    .modal-content {
+      width: 100%;
+    }
+}
+.profile-body .card-body .dropstart {
+    position: absolute;
+    bottom: 75px;
+    right: 18px;
+    background-color: inherit;
+}
+.profile-body .card-body .dropstart .btn {
+    border-radius: 50%;
+}
+.profile-body .card-body .dropstart .btn:hover {
+    background-color: #EEE;
+}
+.profile-body .card-body .dropstart .dropdown-item {
+    font-weight: 700;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+.profile-body .card-body .dropstart .dropdown-item:hover {
+    color: #DD3131;
+    background-color: pink;
+}
+.profile-body .modal.modal-delete.fade h5 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 2px;
+    margin-bottom: 4px;
+    margin-left: 15px;
+}
+.profile-body .modal.modal-delete.fade h6,
+.profile-body .modal.modal-edit.fade h6 {
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 35px;
+    margin-left: 15px;
+}
+.profile-body .modal.modal-delete.fade .btn-secondary {
+    font-size: 20px;
+    color: #000000;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-bottom: 8px;
+    margin-left: 15px;
+}
+.profile-body #delete-modal-2 .btn-secondary,
+.profile-body #modal-edit-2 .btn-secondary {
+    margin-right: 15px;
+}
+.profile-body .modal.modal-delete.fade .btn-danger {
+    font-size: 20px;
+    background-color: #DD3131;
+    border-radius: 6px;
+    border-color: #DD3131;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-bottom: 8px;
+    margin-right: 15px;
+}
+.profile-body .modal.modal-delete.fade .btn-secondary:hover {
+    background-color: #e0e0e0;
+}
+.profile-body .modal.modal-delete.fade .btn-danger:hover {
+    background-color: #a33333;
+}
+.modal.modal-edit.fade h5 {
+    margin-left: 1ch;
+    font-size: 27px;
+    font-weight: 600;
+}
+.modal.modal-edit.fade .modal-header .btn-close {
+    margin-right: 1ch;
+}
+.modal.modal-edit.fade .col-form-label {
+    font-size: 20px;
+    font-weight: 500;
+}
+.modal.modal-edit.fade .form-control {
+    font-size: 20px;
+}
+.modal.modal-edit.fade .form-control:focus {
+    border-color: rgba(221, 49, 49, 1) !important;
+    box-shadow: 0 0 5px rgba(221, 49, 49, 1) !important;
+    outline: 0 none !important;
+}
+.modal.modal-edit.fade textarea {
+    resize: none;
+    overflow: hidden;
+    min-height: 150px;
+}
+.modal.modal-edit.fade .modal-footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+.modal.modal-edit.fade .btn-secondary {
+    font-size: 20px;
+    color: #000000;
+    background-color: #ffffff;
+    border-radius: 6px;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+.modal.modal-edit.fade .btn-danger {
+    font-size: 20px;
+    background-color: #dd3131;
+    border-radius: 6px;
+    border-color: #dd3131;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+.modal.modal-edit.fade .btn-secondary:hover {
+    background-color: #e0e0e0;
+}
+.modal.modal-edit.fade .btn-danger:hover {
+    background-color: #a33333;
+}
+.modal.modal-edit.fade .form-control {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+
 .card .timestamp {
     margin-bottom: 16px;
     margin-left: 16px;
@@ -251,7 +483,28 @@ body {
 .card strong {
     color: black;
 }
-
+.pagination {
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.pagination .page-item a {
+    color: #dd3131;
+    padding: 10px 20px;
+}
+.pagination .page-item a:hover {
+    color: #A33333;
+    padding: 10px 20px;
+    box-shadow: 0 0 1px 2px rgba(221, 31, 31, 0.5);
+}
+.pagination .page-item a:focus {
+    box-shadow: 0 0 2px 2px rgba(221, 31, 31, 0.8);
+}
+.pagination .active a {
+    color: #FFF !important;
+    background-color: #dd3131 !important;
+    border: none !important;
+}
 
 
 /* Footer */

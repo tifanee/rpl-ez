@@ -273,6 +273,10 @@ body {
   .pagination .page-item a:hover {
     color: #A33333;
     padding: 10px 20px;
+    box-shadow: 0 0 1px 2px rgba(221, 31, 31, 0.5);
+  }
+  .pagination .page-item a:focus {
+    box-shadow: 0 0 2px 2px rgba(221, 31, 31, 0.8);
   }
   .pagination .active a {
     color: #FFF !important;

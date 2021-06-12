@@ -1,6 +1,6 @@
 body {
     font-family: Lato;
-    background-color: #EEEEEE;
+    background-image: url(../img/background/bg-texture.jpg);
 }
 
 /* #Navigation Bar */
@@ -169,7 +169,7 @@ body {
     font-weight: 600;
     margin-top: 15px;
     margin-right: 5px;
-    padding: 10px 60px 10px 60px;
+    padding: 10px 50px 10px 50px;
 }
 .profile-body .rating-cards .nav-tabs .active {
     border-top: 2px solid #DD3131;
@@ -253,22 +253,19 @@ a img {
     font-weight: 800;
     margin-top: 4px;
 }
-.profile-body .rating-cards .tab-content .card .card-body .dropstart {
+.profile-body .rating-cards .tab-content .card .card-body .dropup {
     position: absolute;
     bottom: 178px;
     right: 17px;
     background-color: #FFF;
 }
-.profile-body .rating-cards .tab-content .card .card-body .dropstart .btn {
+.profile-body .rating-cards .tab-content .card .card-body .dropup .btn {
     border-radius: 50%;
 }
-.profile-body .rating-cards .tab-content .card .card-body .dropstart .dropdown-item {
+.profile-body .rating-cards .tab-content .card .card-body .dropup .dropdown-item {
     font-weight: 700;
-    margin-top: -5px;
-    margin-bottom: -5px;
-    padding-bottom: 5px;
 }
-.profile-body .rating-cards .tab-content .card .card-body .dropstart .dropdown-item:hover {
+.profile-body .rating-cards .tab-content .card .card-body .dropup .dropdown-item:hover {
     color: #DD3131;
     background-color: pink;
 }
@@ -336,6 +333,11 @@ a img {
     margin-bottom: 35px;
     margin-left: 15px;
 }
+.profile-body .rating-cards .tab-content .modal img {
+    display: block;
+    height: 200px;
+    margin: -20px auto 0;
+}
 .profile-body .rating-cards .tab-content .modal .btn-secondary {
     font-size: 20px;
     color: #000000;
@@ -365,7 +367,28 @@ a img {
 .profile-body .rating-cards .tab-content .modal .btn-danger:hover {
     background-color: #a33333;
 }
-
+.pagination {
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.pagination .page-item a {
+    color: #dd3131;
+    padding: 10px 20px;
+}
+.pagination .page-item a:hover {
+    color: #A33333;
+    padding: 10px 20px;
+    box-shadow: 0 0 1px 2px rgba(221, 31, 31, 0.5);
+}
+.pagination .page-item a:focus {
+    box-shadow: 0 0 2px 2px rgba(221, 31, 31, 0.8);
+}
+.pagination .active a {
+    color: #FFF !important;
+    background-color: #dd3131 !important;
+    border: none !important;
+}
 /* #endregion */
 
 /* Footer */

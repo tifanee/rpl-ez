@@ -1,6 +1,6 @@
 body {
     font-family: Lato;
-    background-color: #EEEEEE;
+    background-image: url(../img/background/bg-texture.jpg);
 }
 
 /* #Navigation Bar */
@@ -207,7 +207,6 @@ body {
     background-color: #A33333;
 }
 .profile .profile-body .form {
-    position: relative;
     margin-left: 20px;
     border: 1px solid silver;
     border-radius: 5px;
@@ -240,7 +239,14 @@ body {
     color: #FFF;
     background-color: #A33333;
 }
-
+.profile .profile-body .col-8.form.password-change {
+    margin-top: 50px;  
+}
+.profile .profile-body input:focus {
+    border-color: #dd3131;
+    box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.075),
+      0 0 0.5px 2px rgba(221, 49, 49, 0.75);
+}
 
 
 
