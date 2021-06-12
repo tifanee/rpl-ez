@@ -83,7 +83,7 @@ Target pengguna kami adalah masyarakat umum terutama food hunter. Pemilik usaha 
 ![usecasetabelrateng](https://user-images.githubusercontent.com/78838446/121717210-20c82b00-cb0b-11eb-8b53-7398ea459cfb.PNG)
 ## Activity Diagram
 ### Mendaftar Akun
-![Activity Diagram-Register Akun](https://user-images.githubusercontent.com/65725044/121325450-cfb60c80-c93b-11eb-8895-8c36ee7319ed.png)
+![EzEats-Register Akun](https://user-images.githubusercontent.com/65725044/121788579-7af2ea00-cbf8-11eb-85d6-3b6592a05f9d.png)
 ### Masuk Akun
 ![Activity Diagram-Sign In](https://user-images.githubusercontent.com/65725044/121325997-50750880-c93c-11eb-85de-495fb5f29faf.png)
 ### Menambah Ulasan
@@ -97,29 +97,31 @@ Target pengguna kami adalah masyarakat umum terutama food hunter. Pemilik usaha 
 ![ERD](https://user-images.githubusercontent.com/78838446/121718457-8963d780-cb0c-11eb-823a-81e51aa098de.PNG)
 ## Software Architecture
 ## Fungsi Utama yang Dikembangkan
-* User dapat membuat ulasan untuk restoran.
-* User dapat menambah info restoran.
-* User dapat memberi penilaian pada restoran.
+* Membuat ulasan untuk restoran.
+* Menambah entri restoran.
+* Memberi penilaian pada restoran.
 ## Fungsi CRUD
 ### Create
 * Membuat akun pada aplikasi web EzEats
 * Membuat ulasan
 * Menambah daftar restoran
-* Menambah daftar restoran favorit
-* Menambah daftar restoran direkomendasikan/tidak direkomendasikan
 ### Read
 * Membaca user input (email dan password) pada akun pengguna saat sign in.
 * Menampilkan ulasan
 * Menampilkan daftar restoran
+* Menampilkan info user
 ### Update
 * Mengedit info user
 * Mengubah kata sandi
 * Mengedit info restoran
-* Menambah foto profil pada pengguna
+* Mengedit foto profil user
+* Menambah daftar restoran favorit
+* Menambah daftar restoran direkomendasikan/tidak direkomendasikan
 ### Delete
 * Menghapus restoran favorit
 * Menghapus restoran direkomendasikan/tidak direkomendasikan
 * Menghapus riwayat resto yang baru dilihat
+* Menghapus ulasan
 # Hasil Implementasi
 ## Link Aplikasi
 Demo aplikasi dapat diakses pada link : *insert link*
