@@ -37,7 +37,7 @@ Kemajuan teknologi perangkat lunak serta berkembangnya paradigma masyarakat dala
 
 # User Analisis
 ## User Profile
-Target pengguna kami adalah masyarakat umum terutama food hunter. Masyarakat terutama para pemilik usaha kuliner dapat memasukkan data restorannya yang bisa menjadi menjadi tempat promosi mereka. Para user difasilitasi untuk menulis ulasan yang bisa membantu user lainnya dalam memilih restoran yang mereka ingin beli makanannya.
+Target pengguna kami adalah masyarakat umum terutama food hunter. Pemilik usaha kuliner dapat memasukkan data restorannya yang bisa menjadi menjadi tempat promosi mereka. Masyarakat umum juga bisa memasukkan data restoran favorit mereka. Para user difasilitasi untuk menulis ulasan yang bisa membantu user lainnya dalam memilih restoran yang mereka ingin beli makanannya.
 ## User Story
 - Sebagai pengguna yang ingin menggunakan aplikasi, agar dapat terdaftar dalam aplikasi dan dapat menggunakan seluruh fitur yang tersedia, saya dapat melakukan registrasi dengan mencantumkan nama, alamat surel, dan kata sandi baru
 - Sebagai pengguna yang ingin mencari rumah makan, menu masakan, serta lokasi tempat makan, saya dapat memanfaatkan search bar yang ada pada halaman utama aplikasi
