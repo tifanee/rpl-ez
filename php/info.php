@@ -52,7 +52,7 @@ foreach ($list_menu as $menu) {
   <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>
   <link rel="stylesheet" type="text/css" href="../frontend/css/info-loggedout.css">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,1200" />
-  <title><?= $resto["nama"] . " " . $resto["kecamatan"]; ?></title>
+  <title><?= $resto["namaresto"] . " " . $resto["kecamatan"]; ?></title>
 </head>
 
 <body>
@@ -88,7 +88,7 @@ foreach ($list_menu as $menu) {
         <img class="resto-cover" src="../frontend/img/kategori/<?= coverImage($resto['kategori']); ?>" alt="Category Food Cover">
         <img class="resto-image" src="../database/img/resto/<?= $resto['foto_resto']; ?>" alt="Restaurant Image">
       </div>
-      <h2 class="resto-name"><?= $resto["nama"] . " " . $resto["kecamatan"]; ?></h2>
+      <h2 class="resto-name"><?= $resto["namaresto"] . " " . $resto["kecamatan"]; ?></h2>
       <h3 class="resto-rate">Direkomendasikan oleh <strong><?= $resto["upvotes"]; ?></strong> dari <strong><?= $views; ?></strong> Orang
         <i class="bi bi-dot"></i><span class="rating"><i class="bi bi-hand-thumbs-up"></i><?= (int)$pro . "%"; ?></span>
       </h3>
@@ -125,7 +125,7 @@ foreach ($list_menu as $menu) {
               </div>
               <div class="col-md-9">
                 <div class="value category"><?= $resto["kategori"]; ?></div>
-                <div class="value address"><?= $resto["jalan"] . ", Kec. " . $resto["kecamatan"] . ", " . $daerah . " " . $resto["namakabkota"]; ?></div>
+                <div class="value address"><?= $resto["jalan"] . ", Kec. " . $resto["kecamatan"] . ", " . $daerah . " " . $resto["kota"]; ?></div>
                 <?php
                 if ($resto["no_telp"] == NULL) {
                   $no_telp = "-";

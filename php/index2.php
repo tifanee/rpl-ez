@@ -188,9 +188,9 @@ $fname = explode(' ', $user["nama"])[0];
             <figcaption class="info-wrap">
               <div class="row">
                 <div class="col-md-11 col-xs-11">
-                  <a href="info2.php?id=<?= $id; ?>&idr=<?= $resto["id"]; ?>" class="title" data-abc="true"><?= $resto["nama"]; ?></a>
+                  <a href="info2.php?id=<?= $id; ?>&idr=<?= $resto["id"]; ?>" class="title" data-abc="true"><?= $resto["namaresto"]; ?></a>
                 <div class="rating"><i class="bi bi-hand-thumbs-up pl-2"></i><?= (int)$pro . "% (" . $views . " Reviews)"; ?></div>
-                 <div class="address"><i class="bi bi-geo-alt"></i><?= $resto["kecamatan"] . ", " . $daerah . " " . $resto["namakabkota"]; ?></div>
+                 <div class="address"><i class="bi bi-geo-alt"></i><?= $resto["kecamatan"] . ", " . $daerah . " " . $resto["kota"]; ?></div>
                   <div class="review"><i class="bi bi-pencil-square"></i>Telah Diulas oleh <strong>77</strong> Orang</div>
                 </div>
                 <div class="col-md-1 col-xs-1">

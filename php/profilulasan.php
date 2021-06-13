@@ -142,8 +142,8 @@ foreach ($reviews as $rev) {
                   <div class="col-md-7 resto">
                     <img src="../database/img/resto/<?= $resto["foto_resto"]; ?>" alt="">
                     <span class="title">
-                      <div class="resto-name"><a href="info2.php?id=<?= $id; ?>&idr=<?= $resto_id; ?>"><?= $resto["nama"]; ?></a></div>
-                      <div class="resto-address"><i class="bi bi-geo-alt"></i>?= $resto["kecamatan"] . ", " . $daerah . " " . $resto["namakabkota"]; ?></div>
+                      <div class="resto-name"><a href="info2.php?id=<?= $id; ?>&idr=<?= $resto_id; ?>"><?= $resto["namaresto"]; ?></a></div>
+                      <div class="resto-address"><i class="bi bi-geo-alt"></i>?= $resto["kecamatan"] . ", " . $daerah . " " . $resto["kota"]; ?></div>
                     </span>
                   </div>
                   <?php if ($review["rekomendasi"] != "") : ?>

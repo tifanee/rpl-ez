@@ -53,7 +53,7 @@ if (isset($_POST["submit-status"])) {
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
   <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>
-  <link rel="stylesheet" type="text/css" href="../css/profil-penilaian.css">
+  <link rel="stylesheet" type="text/css" href="../frontend/css/profil-penilaian.css">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,1200" />
   <title><?= $fname; ?> - EzEats</title>
 </head>
@@ -63,7 +63,7 @@ if (isset($_POST["submit-status"])) {
   <div class="container-fluid" id="NavBar">
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand toplogo" href="index2.php?id=<?= $id; ?>"><img src="../img/logo ezeats red.png" alt="EzEats"></a>
+        <a class="navbar-brand toplogo" href="index2.php?id=<?= $id; ?>"><img src="../frontend/img/logo ezeats red.png" alt="EzEats"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
           aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -105,8 +105,8 @@ if (isset($_POST["submit-status"])) {
   <div class="container profile">
     <div class="profile-header">
       <div class="images-header">
-        <img class="profile-cover" src="../img/twice-wide.jpg" alt="Fast Food Cover">
-        <img class="profile-image" src="../img/user/<?= $user["gambar"]; ?>" alt="McDonalds Dramaga">
+        <img class="profile-cover" src="../frontend/img/twice-wide.jpg" alt="Fast Food Cover">
+        <img class="profile-image" src="../database/img/user/<?= $user["gambar"]; ?>" alt="McDonalds Dramaga">
         <img class="profile-image-bg" src="../img/white.jpg" alt="">
       </div>
       <h2 class="resto-name"><?= $user["nama"]; ?></h2>
@@ -171,9 +171,9 @@ if (isset($_POST["submit-status"])) {
                     <div class="card h-100" id="">
                       <a href="info2.php?id=<?= $id; ?>&idr=<?= $idr; ?>"><img src="../database/img/resto/<?= $resto["foto_resto"]; ?>" class="card-img-top" alt="Susu Mbok Darmi"></a>
                       <div class="card-body">
-                        <h5 class="card-title"> <a href="info2.php?id=<?= $id; ?>&idr=<?= $idr; ?>"><?= $resto["nama"]; ?></a> </h5>
+                        <h5 class="card-title"> <a href="info2.php?id=<?= $id; ?>&idr=<?= $idr; ?>"><?= $resto["namaresto"]; ?></a> </h5>
                         <div class="card-rating"><i class="bi bi-hand-thumbs-up pl-2"></i><strong><?= (int)$pro; ?> %</strong> (<?= $views; ?> Penilaian)</div>
-                        <div class="card-address"><i class="bi bi-geo-alt"></i><?= $resto["kecamatan"]; ?>, <?= $daerah; ?> <?= $resto["namakabkota"]; ?></div>
+                        <div class="card-address"><i class="bi bi-geo-alt"></i><?= $resto["kecamatan"]; ?>, <?= $daerah; ?> <?= $resto["kota"]; ?></div>
                         <div class="d-flex user-rating good" id="">
                           <span class="icon"><i class="bi bi-hand-thumbs-up"></i></span>
                           <span class="info"><?= $review["rekomendasi"]; ?></span>
@@ -246,9 +246,9 @@ if (isset($_POST["submit-status"])) {
                     <div class="card h-100" id="">
                       <a href="info2.php?id=<?= $id; ?>&idr=<?= $idr; ?>">"><img src="../database/img/resto/<?= $resto["foto_resto"]; ?>" class="card-img-top" alt="Taco Bell"></a>  
                       <div class="card-body">
-                        <h5 class="card-title"> <a href="info2.php?id=<?= $id; ?>&idr=<?= $idr; ?>"><?= $resto["nama"]; ?></a> </h5>
+                        <h5 class="card-title"> <a href="info2.php?id=<?= $id; ?>&idr=<?= $idr; ?>"><?= $resto["namaresto"]; ?></a> </h5>
                         <div class="card-rating"><i class="bi bi-hand-thumbs-up pl-2"></i><strong>93%</strong><?= (int)$pro; ?>%</strong> (<?= $views; ?> Penilaian)</div>
-                        <div class="card-address"><i class="bi bi-geo-alt"></i><?= $resto["kecamatan"]; ?>, <?= $daerah; ?> <?= $resto["namakabkota"]; ?></div>
+                        <div class="card-address"><i class="bi bi-geo-alt"></i><?= $resto["kecamatan"]; ?>, <?= $daerah; ?> <?= $resto["kota"]; ?></div>
                         <div class="d-flex user-rating bad" id="">
                           <span class="icon"><i class="bi bi-hand-thumbs-down"></i></span>
                           <span class="info"><?= $review["rekomendasi"]; ?></span>
@@ -340,7 +340,7 @@ if (isset($_POST["submit-status"])) {
                     </div>
                     <div class="modal-body">
                       <h6>Apakah Anda Yakin Ingin Mengubah Penilaian untuk Resto ini?</h6>
-                      <img src="../img/rec-to-unrec.png" alt="">
+                      <img src="../frontend/img/rec-to-unrec.png" alt="">
                     </div>
                     <div class="d-flex modal-footer justify-content-between">
                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
@@ -359,7 +359,7 @@ if (isset($_POST["submit-status"])) {
                     </div>
                     <div class="modal-body">
                       <h6>Apakah Anda Yakin Ingin Mengubah Penilaian untuk Resto ini?</h6>
-                      <img src="../img/unrec-to-rec.png" alt="">
+                      <img src="../frontend/img/unrec-to-rec.png" alt="">
                     </div>
                     <div class="d-flex modal-footer justify-content-between">
                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
