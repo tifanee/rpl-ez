@@ -1,6 +1,6 @@
 body {
     font-family: Lato;
-    background-color: #EEEEEE;
+    background-image: url(../img/background/bg-texture.jpg);
 }
 
 /* Navigation Bar */
@@ -15,6 +15,18 @@ body {
 .navbar-nav {
     font-family: Lato;
     font-size: 19px;
+}
+.navbar-nav .active::after,
+.navbar-nav #Beranda:hover::after,
+.navbar-nav #Kategori:hover::after,
+.navbar-nav #SignUp:hover::after {
+  content: "";
+  display: block;
+  border-bottom: 3px solid #dd3131;
+  width: 60%;
+  margin: auto;
+  padding-bottom: 5px;
+  margin-bottom: -8px;
 }
 .navbar-nav #SignUp {
     margin-left: 10px;
@@ -74,10 +86,12 @@ body {
     z-index: -1;
 }
 .info .images-header .resto-image {
+    height: 290px;
     width: 33%;
     display: block;
+    object-fit: cover;
     margin: -200px auto 0;
-    border: solid #FFFFFF 5px;
+    border: solid #ffffff 5px;
     border-radius: 15px;
 }
 .info strong {
@@ -99,6 +113,10 @@ body {
     font-weight: 900;
     color: #24923D;
 }
+/* #endregion */
+
+/* Navigation Tab */
+ /* #region */
 .info .info-body {
     position: relative;
     background-color: #FFFFFF;
@@ -140,9 +158,13 @@ body {
 .nav-tabs {
     border-bottom: 1px solid #DD3131;
 }
+/* #endregion */
+
+/* Detail and Button */
+/* #region */
 .info .info-body .tab-content {
     margin: 40px 40px;
-    padding-bottom: 100px;
+    padding-bottom: 70px;
 }
 .info .info-body .tab-content .attribute {
     font-size: 18px;
@@ -162,12 +184,118 @@ body {
     padding-bottom: 10px;
     border-bottom: 1px solid silver;
 }
+/* Menu and Gallery */
+  .info-body .tab-content #menus {
+    margin-top: 30px;
+  }
+  .info-body .tab-content #menus .image-wrap {
+    overflow: hidden;
+    margin-bottom: 20px;
+    border: 4px solid transparent;
+    border-radius: 7px;
+    height: 320px;
+  }
+  .info-body .tab-content #menus .image-wrap:hover {
+    -webkit-box-shadow: 0 5px 15px rgba(153, 153, 153, 0.75);
+    box-shadow: 0 5px 15px rgba(153, 153, 153, 0.75);
+  }
+  .info-body .tab-content #menus img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;    
+  }
+  .info-body .tab-content #menus .image-wrap img:hover {
+    opacity: 0.85;
+    transform: scale(1.08);
+    transition: transform .2s;
+    cursor: pointer;
+  }
+  .modal.menus {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding: 5px 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+  }
+  .modal.menus .modal-content {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    max-width: 75%;    
+    max-height: 90vh;
+    border: none;
+    background-color: transparent;
+  }
+  .modal.menus .modal-content .my-slides {
+    text-align: center;
+    margin: auto;
+    width: 63vw;
+    height: 800px;    
+  }
+  .modal.menus .modal-content .my-slides img {
+    object-fit: contain !important;
+    width: 100% !important;
+  }
+  .modal.menus .close {
+    color: #FFF;
+    position: absolute;
+    top: 10px;
+    right: 45px;
+    font-size: 48px;
+    font-weight: bold;
+    transition: 0.3s ease;
+  }
+  .modal.menus .close:hover, .close:focus {
+    color: rgb(187, 185, 185);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .modal.menus .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: #FFF !important;
+    font-weight: bold;
+    font-size: 3em;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  .modal.menus .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .modal.menus .next:hover, .prev:hover {
+    background-color: rgba(0, 0, 0, 0.658);
+  }
+  .modal.menus .modal-content .my-slides {
+      animation-name: zoom;
+      animation-duration: 0.3s;
+  }  
+  @keyframes zoom {
+      from {
+        transform: scale(0)
+      }
+      to {
+        transform: scale(1)
+      }
+  }  
+
 /* #endregion */
 
 /* User Rating and Review */
 /* #region */
 .rate-divider {
-    border-top: 1px solid silver;
+    border-top: 2px solid silver;
     margin: 30px -20px 30px -20px;
 }
 .user-rating {
@@ -272,7 +400,7 @@ body {
 /* Cards of Review */
 /* #region */
 .card-divider {
-    border-top: 1px solid silver;
+    border-top: 2px solid silver;
     margin: 35px -20px 35px -20px;
 }
 .card {
@@ -345,6 +473,97 @@ body {
 .card .review .detail {
     font-size: 20px;
 }
+
+
+.card .review .img-wrap {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+    width: 320px;
+    border-radius: 8px;
+    transform: .3s;
+    margin-bottom: 20px;
+}
+.card .review .img-wrap:hover {
+    -webkit-box-shadow: 0 5px 15px rgba(153, 153, 153, 0.75);
+    box-shadow: 0 5px 15px rgba(153, 153, 153, 0.75);
+}
+.card .review .img-wrap img {
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+}
+.card .review .img-wrap img:hover {
+    transform: scale(1.1);
+    transition: transform .3s;
+}
+.card .review .img-wrap .review-image {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}  
+.card .review .img-wrap .review-image:hover {
+    opacity: 0.85;
+}
+.reviews .modal.zoom-image {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 4;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.85);
+    /* Black w/ opacity */
+}
+.reviews .modal.zoom-image .modal-content {
+    margin: 10px auto;
+    max-width: 800px;
+    max-height: 600px;
+    border-radius: 15px;
+    align-items: center;
+}
+.reviews .modal.zoom-image .modal-content img {
+    margin: auto;
+    object-fit: scale-down;
+    object-position: center;
+    size: 100%;
+}  
+.reviews .modal.zoom-image #caption {
+    margin: 35px auto ;
+    text-align: center;
+    color: #ccc;
+    font-weight: 700;
+    font-size: 21px;
+    padding: 0;
+    max-height: 30px;
+    align-items: flex-start;
+}
+.reviews .modal.zoom-image .modal-content,
+#caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+ }  
+@keyframes zoom {
+    from {
+      transform: scale(0)
+    }
+    to {
+      transform: scale(1)
+    }
+}
+
 .card .review .timestamp {
     position: absolute;
     bottom: 75px;

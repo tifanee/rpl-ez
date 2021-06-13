@@ -157,7 +157,7 @@ body {
   /* #region */
   .info .info-body .tab-content {
     margin: 40px 40px;
-    padding-bottom: 40px;
+    padding-bottom: 70px;
   }
   .info .info-body .tab-content .attribute {
     font-size: 18px;
@@ -425,15 +425,104 @@ body {
   .info-body .tab-content #menus .image-wrap {
     overflow: hidden;
     margin-bottom: 20px;
-    border: 2px solid silver;
+    border: 4px solid transparent;
     border-radius: 7px;
     height: 320px;
+  }
+  .info-body .tab-content #menus .image-wrap:hover {
+    -webkit-box-shadow: 0 5px 15px rgba(153, 153, 153, 0.75);
+    box-shadow: 0 5px 15px rgba(153, 153, 153, 0.75);
   }
   .info-body .tab-content #menus img {
     object-fit: cover;
     width: 100%;
     height: 100%;    
   }
+  .info-body .tab-content #menus .image-wrap img:hover {
+    opacity: 0.85;
+    transform: scale(1.08);
+    transition: transform .2s;
+    cursor: pointer;
+  }
+  .modal.menus {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding: 5px 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+  }
+  .modal.menus .modal-content {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    max-width: 75%;    
+    max-height: 90vh;
+    border: none;
+    background-color: transparent;
+  }
+  .modal.menus .modal-content .my-slides {
+    text-align: center;
+    margin: auto;
+    width: 63vw;
+    height: 800px;    
+  }
+  .modal.menus .modal-content .my-slides img {
+    object-fit: contain !important;
+    width: 100% !important;
+  }
+  .modal.menus .close {
+    color: #FFF;
+    position: absolute;
+    top: 10px;
+    right: 45px;
+    font-size: 48px;
+    font-weight: bold;
+    transition: 0.3s ease;
+  }
+  .modal.menus .close:hover, .close:focus {
+    color: rgb(187, 185, 185);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .modal.menus .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: #FFF !important;
+    font-weight: bold;
+    font-size: 3em;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  .modal.menus .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .modal.menus .next:hover, .prev:hover {
+    background-color: rgba(0, 0, 0, 0.658);
+  }
+  .modal.menus .modal-content .my-slides {
+      animation-name: zoom;
+      animation-duration: 0.3s;
+  }  
+  @keyframes zoom {
+      from {
+        transform: scale(0)
+      }
+      to {
+        transform: scale(1)
+      }
+  }  
   /* #endregion */
 
 /* #endregion */
@@ -441,7 +530,7 @@ body {
 /* User Rating and Review */
 /* #region */
 .rate-divider {
-  border-top: 1px solid silver;
+  border-top: 2px solid silver;
   margin: 30px -20px 30px -20px;
 }
 .user-rating {
@@ -473,6 +562,43 @@ body {
 }
 .user-rating .yes .bi {
   padding-right: 8px;
+}
+.user-rating .modal-fav .modal-content {
+  background-color: #ffeeee;
+}
+.user-rating .modal-black .modal-content {
+  background-color: #ffffff;
+}
+.user-rating .modal a {
+  font-weight: 600;
+  color: #dd3131;
+}
+.user-rating .modal a:hover {
+  color: #a33333;
+}
+.user-rating .modal .modal-header {
+  border-bottom: 2.4px solid silver;
+}
+.user-rating .modal .modal-header .btn-close {
+  font-size: 17px;
+}
+.user-rating .modal .modal-title {
+  font-size: 21px;
+  font-weight: 600;
+  margin-left: 24px;
+}
+.user-rating .modal .modal-title .bi {
+  font-size: 22px;
+  margin-right: 15px;
+}
+.user-rating .modal .modal-body h6 {
+  font-size: 20px;
+  font-weight: 400;
+}
+.user-rating .modal .modal-body {
+  margin-top: 8px;
+  margin-bottom: 35px;
+  margin-left: 25px;
 }
 .user-review {
   font-size: 27px;
@@ -551,13 +677,19 @@ body {
 /* Cards of Review */
 /* #region */
 .card-divider {
-  border-top: 1px solid silver;
+  border-top: 2px solid silver;
   margin: 35px -20px 35px -20px;
 }
 .card {
   margin-top: 20px;
   border: 2px solid silver;
   border-radius: 10px;
+}
+.card.my-card {
+  background-image: linear-gradient(to bottom right, rgb(253, 228, 228), rgb(255, 255, 255));
+}
+.my-review-title ~ .card.my-card:empty {
+  display: none;
 }
 .card .card-body {
   border-bottom: 1px solid silver;
@@ -624,28 +756,256 @@ body {
 .card .review .detail {
   font-size: 20px;
 }
+
+.card .review .img-wrap {
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+  width: 320px;
+  border-radius: 8px;
+  transform: .3s;
+  margin-bottom: 20px;
+}
+.card .review .img-wrap:hover {
+  -webkit-box-shadow: 0 5px 15px rgba(153, 153, 153, 0.75);
+  box-shadow: 0 5px 15px rgba(153, 153, 153, 0.75);
+}
+.card .review .img-wrap img {
+  object-fit: cover;
+  height: 300px;
+  width: 100%;
+}
+.card .review .img-wrap img:hover {
+  transform: scale(1.1);
+  transition: transform .3s;
+}
+.card .review .img-wrap .review-image {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}  
+.card .review .img-wrap .review-image:hover {
+  opacity: 0.85;
+}
+.reviews .modal.zoom-image {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 4;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.85);
+  /* Black w/ opacity */
+}
+.reviews .modal.zoom-image .modal-content {
+  margin: 10px auto;
+  max-width: 800px;
+  max-height: 600px;
+  border-radius: 15px;
+  align-items: center;
+}
+.reviews .modal.zoom-image .modal-content img {
+  margin: auto;
+  object-fit: scale-down;
+  object-position: center;
+  size: 100%;
+}  
+.reviews .modal.zoom-image #caption {
+  margin: 35px auto ;
+  text-align: center;
+  color: #ccc;
+  font-weight: 700;
+  font-size: 21px;
+  padding: 0;
+  max-height: 30px;
+  align-items: flex-start;
+}
+.reviews .modal.zoom-image .modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}  
+@keyframes zoom {
+  from {
+    transform: scale(0)
+  }
+  to {
+    transform: scale(1)
+  }
+}
+.reviews .card .dropstart {
+  position: absolute;
+  bottom: 125px;
+  right: 40px;
+  background-color: inherit;
+}
+.reviews .card .dropstart .btn {
+  border-radius: 50%;
+}
+.reviews .card .dropstart .btn:hover {
+  background-color: #EEE;
+}
+.reviews .card .dropstart .dropdown-item {
+  font-weight: 700;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+.reviews .card .dropstart .dropdown-item:hover {
+  color: #DD3131;
+  background-color: pink;
+}
+.modal.modal-delete.fade h5 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 2px;
+  margin-bottom: 4px;
+  margin-left: 15px;
+}
+.modal.modal-delete.fade h6,
+.modal.modal-edit.fade h6 {
+  font-size: 22px;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 35px;
+  margin-left: 15px;
+}
+.modal.modal-delete.fade .btn-secondary {
+  font-size: 20px;
+  color: #000000;
+  background-color: #FFFFFF;
+  border-radius: 6px;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-bottom: 8px;
+  margin-left: 15px;
+}
+#delete-modal-2 .btn-secondary,
+#modal-edit-2 .btn-secondary {
+  margin-right: 15px;
+}
+.modal.modal-delete.fade .btn-danger {
+  font-size: 20px;
+  background-color: #DD3131;
+  border-radius: 6px;
+  border-color: #DD3131;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-bottom: 8px;
+  margin-right: 15px;
+}
+.modal.modal-delete.fade .btn-secondary:hover {
+  background-color: #e0e0e0;
+}
+.modal.modal-delete.fade .btn-danger:hover {
+  background-color: #a33333;
+}
+.modal.modal-edit.fade h5 {
+  margin-left: 1ch;
+  font-size: 27px;
+  font-weight: 600;
+}
+.modal.modal-edit.fade .modal-header .btn-close {
+  margin-right: 1ch;
+}
+.modal.modal-edit.fade .col-form-label {
+  font-size: 20px;
+  font-weight: 500;
+}
+.modal.modal-edit.fade .form-control {
+  font-size: 20px;
+}
+.modal.modal-edit.fade .form-control:focus {
+  border-color: rgba(221, 49, 49, 1) !important;
+  box-shadow: 0 0 5px rgba(221, 49, 49, 1) !important;
+  outline: 0 none !important;
+}
+.modal.modal-edit.fade textarea {
+  resize: none;
+  overflow: hidden;
+  min-height: 150px;
+}
+.modal.modal-edit.fade .modal-footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+.modal.modal-edit.fade .btn-secondary {
+  font-size: 20px;
+  color: #000000;
+  background-color: #ffffff;
+  border-radius: 6px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+.modal.modal-edit.fade .btn-danger {
+  font-size: 20px;
+  background-color: #dd3131;
+  border-radius: 6px;
+  border-color: #dd3131;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+.modal.modal-edit.fade .btn-secondary:hover {
+  background-color: #e0e0e0;
+}
+.modal.modal-edit.fade .btn-danger:hover {
+  background-color: #a33333;
+}
+.modal.modal-edit.fade .form-control {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
 .card .review .timestamp {
   position: absolute;
-  bottom: 75px;
+  bottom: 80px;
   right: 40px;
 }
 .card .card-bottom .vote-review {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   margin-left: 38px;
-  padding-top: 10px;
+  padding-top: 12px;
+  padding-bottom: 0;
   font-size: 17px;
-  color: gray;
+  color: #888;
 }
-.card .card-bottom .vote-review .bi {
-  margin-left: 3px;
+.card .card-bottom .btn {
+  padding: 0 0 10px 4px !important;
+}
+.card .card-bottom a span.like-btn {
   font-size: 23px;
-  color: gray;
+  color: #888;
+  padding: 0;
+}
+.card .card-bottom a span.like-btn.clicked {
+  color: #24923d; 
 }
 .card .card-bottom .voter-info {
   margin-top: 6px;
   font-size: 17px;
   margin-left: 30px;
-  padding-top: 10px;
+  padding-top: 14px;
+  text-align: end;
+  color: gray;
+}
+.card.my-card .card-bottom .voter-info {
+  margin-top: 6px;
+  font-size: 17px;
+  margin-right: 42px;
+  padding-top: 14px;
+  padding-bottom: 18px;
   text-align: end;
   color: gray;
 }

@@ -33,8 +33,8 @@
             <button class="btn btn-outline-danger" type="submit"><i class="bi bi-search "></i></button>
           </form>
           <div class="navbar-nav ms-auto">
-            <a class="nav-link" id="SignUp" href="signup page.html">Sign Up</a>
-            <a class="btn btn-danger" id="SignIn" href="sign in page.html" role="button">Sign In</a>
+            <a class="nav-link" id="SignUp" href="signup page.html">Daftar</a>
+            <a class="btn btn-danger" id="SignIn" href="sign in page.html" role="button">Masuk</a>
           </div>
         </div>
       </nav>
@@ -68,8 +68,8 @@
             role="tab" aria-controls="description" aria-selected="false">Deskripsi</button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="menu-tab" data-bs-toggle="tab" data-bs-target="#menu" type="button" role="tab"
-            aria-controls="menu" aria-selected="false">Menu</button>
+          <button class="nav-link" id="menu-tab" data-bs-toggle="tab" data-bs-target="#menus" type="button" role="tab"
+            aria-controls="menus" aria-selected="false">Menu</button>
         </li>
         <li class="nav-item" role="presentation">
           <button class="nav-link" id="gallery-tab" data-bs-toggle="tab" data-bs-target="#gallery" type="button"
@@ -99,6 +99,7 @@
                 <div class="value facilities">Drive Thru, Delivery, AC, Wi-Fi, Outdoor, Smoking Area</div>
               </div>
             </div>
+            <br><br>
           </div>
         </div>
         <div class="tab-pane fade" id="description" role="tabpanel" aria-labelledby="descript-tab">
@@ -136,8 +137,99 @@
             menghadirkan kualitas makanan terdepan, serta memberikan manfaat yang besar bagi masyarakat Indonesia.
           </div>
         </div>
-        <div class="tab-pane fade" id="menu" role="tabpanel" aria-labelledby="menu-tab">
-          TBA.
+        <div class="tab-pane fade" id="menus" role="tabpanel" aria-labelledby="menu-tab">
+          <div class="container">
+            <div class="d-flex row justify-content-start">
+              <div class="col-lg-4 col-xl-3">
+                <div class="menu image-wrap">
+                  <img src="../img/menus/menu-mcd-1.jpg" onclick="openModal(); currentSlide(1)">
+                </div>                
+              </div>
+              <div class="col-lg-4 col-xl-3">
+                <div class="menu image-wrap">
+                  <img src="../img/menus/menu-mcd-2.jpg" onclick="openModal(); currentSlide(2)">
+                </div>                
+              </div>
+              <div class=" col-lg-4 col-xl-3">
+                <div class="menu image-wrap">
+                  <img src="../img/menus/menu-mcd-3.jpg" onclick="openModal(); currentSlide(3)">
+                </div>                
+              </div>
+              <div class="col-lg-4 col-xl-3">
+                <div class="menu image-wrap">
+                  <img src="../img/menus/menu-mcd-4.jpg" onclick="openModal(); currentSlide(4)">
+                </div>                
+              </div>
+              <div class=" col-lg-4 col-xl-3">
+                <div class="menu image-wrap">
+                  <img src="../img/menus/menu-mcd-5.jpg" onclick="openModal(); currentSlide(5)">
+                </div>                
+              </div>
+              <div class="col-lg-4 col-xl-3">
+                <div class="menu image-wrap">
+                  <img src="../img/menus/menu-mcd-6.jpg" onclick="openModal(); currentSlide(6)">
+                </div>                
+              </div>              
+            </div>
+          </div>
+          <div class="modal menus" id="menu-modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+              <div class="my-slides">
+                <img src="../img/menus/menu-mcd-1.jpg" class="modal-image" alt="Menu 1">
+              </div>
+              <div class="my-slides">
+                <img src="../img/menus/menu-mcd-2.jpg" class="modal-image" alt="Menu 2">
+              </div>
+              <div class="my-slides">
+                <img src="../img/menus/menu-mcd-3.jpg" class="modal-image" alt="Menu 3">
+              </div>
+              <div class="my-slides">
+                <img src="../img/menus/menu-mcd-4.jpg" class="modal-image" alt="Menu 4">
+              </div>
+              <div class="my-slides">
+                <img src="../img/menus/menu-mcd-5.jpg" class="modal-image" alt="Menu 5">
+              </div>
+              <div class="my-slides">
+                <img src="../img/menus/menu-mcd-6.jpg" class="modal-image" alt="Menu 6">
+              </div>
+        
+              <!--Next and Prev-->
+              <div class="prev" onclick="changeSlides(-1)">&#10094;</div>
+              <div class="next" onclick="changeSlides(1)">&#10095;</div>
+        
+            </div>
+            <script type="text/javascript">
+              function openModal() {
+                document.getElementById('menu-modal').style.display = "inline-flex";
+              }
+              function closeModal() {
+                document.getElementById('menu-modal').style.display = "none";
+              }
+              var slideIndexJS = 1;
+              showSlides(slideIndexJS);
+              function changeSlides(n) {
+                showSlides(slideIndexJS += n);
+              }
+              function currentSlide(n) {
+                showSlides(slideIndexJS = n);
+              }
+              function showSlides(n) {
+                var i;
+                var slidesJS = document.getElementsByClassName("my-slides");
+                if (n > slidesJS.length) {
+                  slideIndexJS = 1;
+                }
+                if (n < 1) {
+                  slideIndexJS = slidesJS.length;
+                }
+                for (i = 0; i < slidesJS.length; i++) {
+                  slidesJS[i].style.display = "none";
+                }
+                slidesJS[slideIndexJS-1].style.display = "block";
+              }
+            </script>    
+          </div>
         </div>
         <div class="tab-pane fade" id="gallery" role="tabpanel" aria-labelledby="gallery-tab">
           TBA.
@@ -169,7 +261,7 @@
 
 
   <!--Start of Reviews-->
-  <div class="container">
+  <div class="container reviews">
     <div class="card-divider"> </div>
     <div class="card">
       <div class="card-body">
@@ -197,13 +289,16 @@
                 cobain deh makan di sini. Ga akan nyesel! ^^
               </p>
             </div>
+            <div class="img-wrap">
+              <img src="../img/user-reviews/susudarmi-02.jpg" alt="Seger Bangett!" class="review-image">
+            </div>
             <div class="timestamp">08.56 11/05/2021</div>
           </div>
         </div>
       </div>
       <div class="card-bottom">
         <div class="row justify-content-end">          
-          <div class="col-md-5 voter-info"><strong>378</strong> dari <strong>380</strong> Voter Terbantu</div>
+          <div class="col-md-5 voter-info"><strong>378</strong> Orang Terbantu dengan Ulasan Ini</div>
         </div>
       </div>
     </div>
@@ -233,13 +328,16 @@
                 waktu gua, Gak mau tau!! >:(
               </p>
             </div>
+            <div class="img-wrap">
+              <img src="" alt="" class="review-image">
+            </div>
             <div class="timestamp">14.07 10/05/2021</div>
           </div>
         </div>
       </div>
       <div class="card-bottom">
         <div class="row justify-content-end">
-          <div class="col-md-5 voter-info"><strong>447</strong> dari <strong>512</strong> Voter Terbantu</div>
+          <div class="col-md-5 voter-info"><strong>447</strong> Orang Terbantu dengan Ulasan Ini</div>
         </div>
       </div>
     </div>
@@ -271,13 +369,16 @@
                 cobain deh makan di sini. Ga akan nyesel! ^^
               </p>
             </div>
+            <div class="img-wrap">
+              <img src="" alt="" class="review-image">
+            </div>
             <div class="timestamp">08.56 11/05/2021</div>
           </div>
         </div>
       </div>
       <div class="card-bottom">
         <div class="row justify-content-end">
-          <div class="col-md-5 voter-info"><strong>378</strong> dari <strong>380</strong> Voter Terbantu</div>
+          <div class="col-md-5 voter-info"><strong>378</strong> Orang Terbantu dengan Ulasan Ini</div>
         </div>
       </div>
     </div>
@@ -307,17 +408,60 @@
                 waktu gua, Gak mau tau!! >:(
               </p>
             </div>
+            <div class="img-wrap">
+              <img src="" alt="" class="review-image">
+            </div>
             <div class="timestamp">14.07 10/05/2021</div>
           </div>
         </div>
       </div>
       <div class="card-bottom">
         <div class="row justify-content-end">
-          <div class="col-md-5 voter-info"><strong>447</strong> dari <strong>512</strong> Voter Terbantu</div>
+          <div class="col-md-5 voter-info"><strong>447</strong> Orang Terbantu dengan Ulasan Ini</div>
         </div>
       </div>
     </div>
+
+    <div id="images-modal" class="modal zoom-image">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="img-zoom">
+      <div id="caption"></div>
+    </div>
+
   </div>
+
+  <script>
+     // If src Null, Div Hide
+     $('img[src=""]').parents('.img-wrap').hide();
+
+    // create references to the modal...
+    var modal = document.getElementById('images-modal');
+    // to all images -- note I'm using a class!
+    var images = document.getElementsByClassName('review-image');
+    // the image in the modal
+    var modalImg = document.getElementById("img-zoom");
+    // and the caption in the modal
+    var captionText = document.getElementById("caption");
+
+    // Go through all of the images with our custom class
+    for (var i = 0; i < images.length; i++) {
+      var img = images[i];
+      // and attach our click listener for this image.
+      img.onclick = function(evt) {
+        modal.style.display = "flex";
+        modal.style.flexDirection = "column";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+    }
+
+    window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+    }
+  </script>
+
   <br><br>
   <!--End of Start of Reviews-->
 
