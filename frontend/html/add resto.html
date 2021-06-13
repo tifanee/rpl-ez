@@ -1,200 +1,154 @@
 <!DOCTYPE html>
 <html lang="id">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=0.35" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
-    />
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css"
-    />
-    <link rel="stylesheet" type="text/css" href="../css/add-resto.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,1200"
-    />
-    <title>Tambah Restoran - EzEats</title>
-  </head>
-  <body>
-      <div class="profile-body">
-        <div class="row justify-content-evenly">
-          <div class="col-5">
-            <h4>"Makanan bukan hanya masakan yang akan berakhir di perutmu, melainkan sebuah petualangan yang patut dinikmati dan dihargai"</h4>
-            <br>
-            <h4>--Winda Krisnadefa--</h4>
-          </div>
-          <div class="col-7 form">
-            <form action="" class="row private-info">
-                <img src="../img/logo ezeats red.png">
 
-                <!--Detail Resto-->
-                <h4>Detail Restoran</h4>
-              <div class="mb-3">
-                <label for="formRestoData" class="form-label">Nama Restoran</label>
-                <input
-                  type="text"
-                  class="form-control add-resto"
-                  id="formRestoData-name"
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <label for="formRestoData" class="form-label">No. Telepon</label>
-                <input
-                  type="tel"
-                  class="form-control add-resto"
-                  id="formRestoData-notelp"
-                />
-              </div>
-              <div class="mb-3">
-                <label for="formRestoData" class="form-label">Website</label>
-                <input
-                  type="url"
-                  class="form-control add-resto"
-                  id="formRestoData-notelp"
-                />
-              </div>
-              <div class="mb-3">
-                <label for="formRestoData" class="form-label">Kategori</label>
-                <select class="form-select">
-                  <option selected disabled> </option>
-                  <option value="Fast-Food">Cepat Saji</option>
-                  <option value="Indonesian">Kuliner Indonesia</option>
-                  <option value="Japanese">Kuliner Jepang</option>
-                  <option value="Korean">Kuliner Korea</option>
-                  <option value="Chicken">Aneka Ayam</option>
-                  <option value="Noodles">Aneka Mie dan Bakso</option>
-                  <option value="Drinks">Aneka Minuman</option>
-                  <option value="Korean">Makanan Penutup</option>
-                </select>
-              </div>
-              <div class="mb-3">
-                <label for="formRestoData" class="form-label">Waktu Buka</label>
-                <br>
-                <input
-                  class="form-jambuka"
-                  type="time"
-                  id="formRestoData-jambuka"
-                  name="jambuka"
-                  min="00:00"
-                  max="23:59"
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <label for="formRestoData" class="form-label">Waktu Tutup</label>
-                <br>
-                <input
-                  class="form-jambuka"
-                  type="time"
-                  id="formRestoData-jamtutup"
-                  name="jamtutup"
-                  min="00:00"
-                  max="23:59"
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <label for="formRestoData" class="form-label">Rentang Harga</label>
-                <input
-                  type="text"
-                  class="form-control add-resto"
-                  id="formRestoData-harga"
-                  placeholder="eg: 50.000-100.000"
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <label for="formRestoData" class="form-label">Fasilitas</label>
-                <input
-                  type="text"
-                  class="form-control add-resto"
-                  id="formRestoData-fasilitas"
-                  required
-                  />
-              </div>
-              <div class="mb-3">
-                <label for="formRestoData" class="form-label">Deskripsi</label>
-                <div class="form-floating">
-                  <textarea class="form-control add-resto" placeholder="Deskripsi" id="formRestoData-desk" style="height: 100px"></textarea>
-                </div>
-              </div>
-              <label for="formRestoData" class="form-label">Foto Restauran</label>
-              <div class="input-group">
-                <input type="file" class="form-control" id="input-fotoresto" accept="image/*">
-              </div>
-              <label for="formRestoData" class="form-label">Foto Menu</label>
-              <div class="input-group">
-                <input type="file" class="form-control" id="input-menuresto" multiple>
-              </div>
-              <br>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=0.35" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/add-resto.css" />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,1200" />
+  <title>Tambah Restoran - EzEats</title>
+</head>
 
-              <!--Alamat Resto-->
-              <h4>Alamat Restoran</h4>
-              <div class="mb-3">
-                <label for="formRestoData" class="form-label">Nama Jalan</label>
-                <input
-                  type="text"
-                  class="form-control add-resto"
-                  id="formRestoData-namajalan"
-                  placeholder="Jl..."
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <label for="formRestoData" class="form-label">Nama Kecamatan</label>
-                <input
-                  type="text"
-                  class="form-control add-resto"
-                  id="formRestoData-kec"
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <label for="formRestoData" class="form-label">Kabupaten/Kota</label>
-                <select class="form-select">
-                  <option selected disabled> </option>
-                    <option value="Kabupaten">Kabupaten</option>
-                    <option value="Kota">Kota</option>
-                </select>
-              </div>
-              <div class="mb-3">
-                <label for="formRestoData" class="form-label">Nama Kabupaten/Kota</label>
-                <input
-                  type="text"
-                  class="form-control add-resto"
-                  id="formRestoData-kabkota"
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <label for="formRestoData" class="form-label">Provinsi</label>
-                <input
-                  type="text"
-                  class="form-control add-resto"
-                  id="formRestoData-prov"
-                  required
-                />
-              </div>
-              <a href="#" id="save-button" type="button" class="btn">Tambah Restoran</a>
-            </form>
+<body>
+  <div class="addresto-body">
+    <div class="row justify-content-evenly">
+      <div class="col-5">
+        <img src="../img/thequote3.png" alt="">
+        <!--
+        <h4>"Makanan bukan hanya masakan yang akan berakhir di perutmu, melainkan sebuah petualangan yang patut
+          dinikmati dan dihargai"</h4>
+        <br>
+        <h4>--Winda Krisnadefa--</h4>-->
+      </div>
+      <div class="col-7 form">
+        <form action="" class="row private-info">
+          <img src="../img/logo ezeats red.png">
+
+          <!--Detail Resto-->
+          <h4>Detail Restoran</h4>
+          <div class="mb-3">
+            <label for="formRestoEdit" class="form-label">Nama Restoran</label>
+            <input type="text" class="form-control form-edit-resto" id="formRestoEdit-name" maxlength="140" required />
           </div>
-        </div>
+          <div class="mb-3">
+            <label for="formRestoEdit" class="form-label">Kategori</label>
+            <select class="form-select form-edit-resto" id="formRestoEdit-category" required>
+              <option selected disabled></option>
+              <option value="Fast-Food">Cepat Saji</option>
+              <option value="Indonesian">Kuliner Indonesia</option>
+              <option value="Japanese">Kuliner Jepang</option>
+              <option value="Korean">Kuliner Korea</option>
+              <option value="Chicken">Aneka Ayam</option>
+              <option value="Noodles">Aneka Mie dan Bakso</option>
+              <option value="Drinks">Aneka Minuman</option>
+              <option value="Korean">Makanan Penutup</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="formRestoEdit" class="form-label">No. Telepon</label>
+            <input type="tel" class="form-control form-edit-resto" id="formRestoEdit-phone" maxlength="20" />
+          </div>
+          <div class="mb-3">
+            <label for="formRestoEdit" class="form-label">Website</label>
+            <input type="url" class="form-control form-edit-resto" id="formRestoEdit-website" maxlength="190" />
+          </div>
+          <div class="mb-3">
+            <label for="formRestoEdit" class="form-label">Waktu Buka</label>
+            <input class="form-control form-edit-resto" type="time" id="formRestoEdit-open" min="00:00"
+              max="23:59" required />
+          </div>
+          <div class="mb-3">
+            <label for="formRestoEdit" class="form-label">Waktu Tutup</label>
+            <input class="form-control form-edit-resto" type="time" id="formRestoEdit-close" min="00:00"
+              max="23:59" required />
+          </div>
+          <div class="mb-3">
+            <label for="formRestoEdit" class="form-label">Rentang Harga</label>
+            <input type="text" class="form-control form-edit-resto" id="formRestoEdit-price" placeholder="e.g. IDR 50.000 - 250.000" maxlength="50" required />
+          </div>
+          <div class="mb-3">
+            <label for="formRestoEdit" class="form-label">Fasilitas</label>
+            <input type="text" class="form-control form-edit-resto" id="formRestoEdit-facilities" placeholder="e.g. Parkir Luas, Free Wi-Fi, Smoking Area" maxlength="60" required />
+          </div>
+          <div class="mb-3">
+            <label for="formRestoEdit" class="form-label">Deskripsi</label>
+            <div class="form-floating">
+              <textarea class="form-control form-edit-resto" id="formRestoEdit-desc" maxlength="2000" oninput="auto_grow(this)" style="max-height: 500px;"></textarea>
+            </div>
+            <script>
+              function auto_grow(element) {
+                element.style.height = "5px";
+                element.style.height = element.scrollHeight + "px";
+              }
+            </script>
+          </div>
+          <div class="mb-3">
+            <label for="formRestoEdit" class="form-label">Foto Restauran</label>
+            <div class="input-group">
+              <input type="file" style="font-weight: 400;" class="form-control form-edit-resto"
+                id="formRestoEdit-image" accept="image/png, image/jpg, image/jpeg" />
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="formRestoEdit" class="form-label">Foto Menu</label>
+            <div class="input-group">
+              <input type="file" style="font-weight: 400; margin-bottom: 70px;"
+                class="form-control form-edit-resto" id="formRestoEdit-menu"
+                accept="image/png, image/jpg, image/jpeg" multiple />
+            </div>
+          </div>
+
+          <!--Alamat Resto-->
+          <h4>Alamat Restoran</h4>
+          <div class="mb-3">
+            <label for="formRestoEdit" class="form-label">Nama Jalan</label>
+            <input type="text" class="form-control form-edit-resto" id="formRestoEdit-street" maxlength="50" required />
+          </div>
+          <div class="mb-3">
+            <label for="formRestoEdit" class="form-label">Kecamatan</label>
+            <input type="text" class="form-control form-edit-resto" id="formRestoEdit-region" maxlength="40" required />
+          </div>
+          <div class="mb-3">
+            <label for="formRestoEdit" class="d-block form-label">Kabupaten/Kota</label>
+            <div class="input-group">
+              <select class="form-select form-edit-resto">
+                <option selected disabled></option>
+                <option value="Kabupaten">Kabupaten</option>
+                <option value="Kota">Kota</option>
+              </select>
+              <input type="text" style="width: 40%;" class="form-control form-edit-resto"
+                id="formRestoEdit-region" required maxlength="40" />
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="formRestoEdit" class="form-label">Provinsi</label>
+            <input type="text" class="form-control form-edit-resto" id="formRestoEdit-province" maxlength="40" required />
+          </div>
+          <div class="validation form-check">
+            <input class="form-check-input" type="checkbox" value="" id="CheckDefault"
+              onchange="document.getElementById('submit-button').disabled = !this.checked;">
+            <label class="form-check-label" for="CheckDefault">
+              Saya mengisi data di atas dengan sejujur-jujurnya tanpa adanya niat untuk memberikan informasi
+              palsu dan SIAP untuk menerima hukuman apabila saya melanggar peraturan dan tata tertib yang
+              berlaku.
+            </label>
+          </div>
+          <button type="button" class="btn btn-danger" name="submit-button" id="submit-button" disabled>
+            Tambah Resto
+          </button>
+        </form>
       </div>
     </div>
-    <!--End of Restaurant Info-->
-  </body>
+  </div>
+  
+  <!--End of Restaurant Info-->
+</body>
+
 </html>

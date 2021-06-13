@@ -213,8 +213,14 @@
                     <div class="mb-3">
                       <label for="formRestoEdit" class="form-label">Deskripsi</label>
                       <div class="form-floating">
-                        <textarea class="form-control form-edit-resto" id="formRestoEdit-desc"></textarea>
+                        <textarea class="form-control form-edit-resto" id="formRestoEdit-desc" oninput="auto_grow(this)" style="max-height: 500px;"></textarea>
                       </div>
+                      <script>
+                        function auto_grow(element) {
+                          element.style.height = "5px";
+                          element.style.height = element.scrollHeight + "px";
+                        }
+                      </script>
                     </div>
                     <div class="mb-3">
                       <label for="formRestoEdit" class="form-label">Foto Restauran</label>
@@ -975,6 +981,22 @@
 
   <br /><br />
   <!--End of Start of Reviews-->
+  <!--Start of Pagination-->
+  <nav aria-label="Page navigation">
+    <ul class="pagination justify-content-center">
+      <li class="page-item">
+        <a class="page-link" href="#"><i class="bi bi-chevron-double-left"></i></a>
+      </li>
+      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#"><i class="bi bi-chevron-double-right"></i></a>
+      </li>
+    </ul>
+  </nav>
+
+  <!--End of Pagination--> 
 
   <!-- Start of Footer-->
   <footer>
