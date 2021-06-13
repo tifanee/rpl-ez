@@ -96,6 +96,8 @@ Target pengguna kami adalah masyarakat umum terutama food hunter. Pemilik usaha 
 ## Entity Relationship Diagram (ERD)
 
 ## Software Architecture
+![arsi diagram (1)](https://user-images.githubusercontent.com/65725044/121819944-2021c700-ccba-11eb-999a-79f43bc98d2e.png)
+
 ## Fungsi Utama yang Dikembangkan
 * Membuat ulasan untuk restoran.
 * Menambah entri restoran.
