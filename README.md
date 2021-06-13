@@ -94,7 +94,7 @@ Target pengguna kami adalah masyarakat umum terutama food hunter. Pemilik usaha 
 ![EzEats-Menambah penilaian resto](https://user-images.githubusercontent.com/65725044/121659023-18043480-cacc-11eb-90a8-063947d603b4.png)
 ## Class Diagram
 ## Entity Relationship Diagram (ERD)
-![ERD](https://user-images.githubusercontent.com/78838446/121718457-8963d780-cb0c-11eb-823a-81e51aa098de.PNG)
+
 ## Software Architecture
 ## Fungsi Utama yang Dikembangkan
 * Membuat ulasan untuk restoran.
@@ -122,22 +122,19 @@ Target pengguna kami adalah masyarakat umum terutama food hunter. Pemilik usaha 
 * Menghapus restoran direkomendasikan/tidak direkomendasikan
 * Menghapus riwayat resto yang baru dilihat
 * Menghapus ulasan
+
 # Hasil Implementasi
 ## Link Aplikasi
 Demo aplikasi dapat diakses pada link : *insert link*
+
 # Testing (Test Cases)
 Kami melakukan pengujian secara manual (manual testing) tanpa menggunakan bantuan tools atau scripts, tujuannya adalah untuk memastikan aplikasi bebas dari bugs/error dan memastikan dapat bekerja sesuai dengan yang diharapkan.
-
 ## Positive Case
 Pengujian Positif merupakan jenis pengujian yang dilakukan pada aplikasi perangkat lunak dengan memberikan kumpulan data yang valid sebagai input.
-| No |   Scenario  | Pre-requisites | Steps | Expected Result | Actual Result | Status |
-| -- | ----------- | -------------- | ----- | --------------- | ------------- | ------ |
-| 1  | User login dengan akun yang valid | User mengakses website EzEats | Pergi ke halaman Masuk, masukkan email dan password, klik masuk | Login berhasil dan user diarahkan ke home | d | e |
-| 2  | User mendaftar nama lengkap, email, dan password yang valid | User mengakses website EzEats | Pergi ke halaman daftar, masukkan nama, alamat email, password, dan konfirmasi password, lalu klik daftar | Daftar berhasil | d | e |
-| 3  | Edit info user di edit profile | User mengakses website EzEats | b | c | d | e |
-| 4  | Menambah ulasan restoran | User mengakses website EzEat | b | Berhasil menambahkan ulasan | d | e |
+![testcase positif](https://user-images.githubusercontent.com/65725044/121818593-54918500-ccb2-11eb-99d9-3b56409a1f94.png)
 ## Negative Case
 Pengujian Negatif adalah metode pengujian yang dilakukan pada aplikasi perangkat lunak dengan memberikan kumpulan data yang tidak valid atau tidak tepat sebagai input.
+![testcase negatif](https://user-images.githubusercontent.com/65725044/121818595-56f3df00-ccb2-11eb-8810-b9f85a496b03.png)
 
 # Kesimpulan
 Dengan rentang waktu pengembangan aplikasi yang terbatas, tim kami berhasil membangun sistem yang diharapkan walaupun masih jauh dari kata sempurna.
