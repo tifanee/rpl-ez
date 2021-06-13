@@ -347,7 +347,6 @@ body {
   }
   .modal.fade.edit-resto textarea {
     resize: none;
-    overflow: hidden;
     padding-top: 10px;
     font-weight: 400;
     font-size: 17px;
@@ -355,13 +354,11 @@ body {
   }
   .modal.fade.edit-resto .form-select:focus {
     border-color: #dd3131;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
-      0 0 10px rgba(221, 49, 49, 0.8);
+    box-shadow: 0 0 2px 2px rgba(221, 49, 49, 1);
   }
   .modal.fade.edit-resto .form-control:focus {
     border-color: #dd3131;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
-      0 0 10px rgba(221, 49, 49, 0.8);
+    box-shadow: 0 0 2px 2px rgba(221, 49, 49, 1);
   }
   .modal.fade.edit-resto .input-group {
     margin-bottom: 16px;
@@ -1013,6 +1010,29 @@ body {
   color: black;
 }
 /* #endregion */
+.pagination {
+  margin-top: 0px;
+  margin-bottom: 40px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.pagination .page-item a {
+  color: #dd3131;
+  padding: 10px 20px;
+}
+.pagination .page-item a:hover {
+  color: #A33333;
+  padding: 10px 20px;
+  box-shadow: 0 0 1px 2px rgba(221, 31, 31, 0.5);
+}
+.pagination .page-item a:focus {
+  box-shadow: 0 0 2px 2px rgba(221, 31, 31, 0.8);
+}
+.pagination .active a {
+  color: #FFF !important;
+  background-color: #dd3131 !important;
+  border: none !important;
+}
 
 /* Footer Page */
 /* #region */
