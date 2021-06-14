@@ -71,9 +71,13 @@ Target pengguna kami adalah masyarakat umum terutama food hunter. Pemilik usaha 
 * Software Documentation : Google Sites
 
 # Hasil dan Pembahasan
+## Tampilan
+### Index
+### Info Restro
+### Profil
+### Add Resto
 ## Use Case Diagram
-![usecase](https://user-images.githubusercontent.com/78838446/121642373-a1127000-caba-11eb-9a50-90df89979398.PNG)
-
+![EzEats-Use Case Diagram](https://user-images.githubusercontent.com/65725044/121937612-0ee9c080-cd75-11eb-8a9b-fb706cb335f7.png)
 ## Use Case Description
 ### Add Resto
 ![usecasetabeladdresto](https://user-images.githubusercontent.com/78838446/121642462-bedfd500-caba-11eb-8a13-d3258b756ae2.PNG)
@@ -93,8 +97,9 @@ Target pengguna kami adalah masyarakat umum terutama food hunter. Pemilik usaha 
 ### Menambah Penilaian
 ![EzEats-Menambah penilaian resto](https://user-images.githubusercontent.com/65725044/121659023-18043480-cacc-11eb-90a8-063947d603b4.png)
 ## Class Diagram
+![EzEats-Class Diagram](https://user-images.githubusercontent.com/65725044/121953454-c687ce00-cd87-11eb-9344-83acb688a2ee.png)
 ## Entity Relationship Diagram (ERD)
-
+![EzEats-ER Diagram](https://user-images.githubusercontent.com/65725044/121937778-3ccf0500-cd75-11eb-96a4-e5a87420e66d.png)
 ## Software Architecture
 ![arsi diagram (1)](https://user-images.githubusercontent.com/65725044/121819944-2021c700-ccba-11eb-999a-79f43bc98d2e.png)
 
@@ -127,7 +132,7 @@ Target pengguna kami adalah masyarakat umum terutama food hunter. Pemilik usaha 
 
 # Hasil Implementasi
 ## Link Aplikasi
-Demo aplikasi dapat diakses pada link : *insert link*
+Demo aplikasi dapat diakses pada link : https://ezeats-app.herokuapp.com
 
 # Testing (Test Cases)
 Kami melakukan pengujian secara manual (manual testing) tanpa menggunakan bantuan tools atau scripts, tujuannya adalah untuk memastikan aplikasi bebas dari bugs/error dan memastikan dapat bekerja sesuai dengan yang diharapkan.
