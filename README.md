@@ -71,11 +71,6 @@ Target pengguna kami adalah masyarakat umum terutama food hunter. Pemilik usaha 
 * Software Documentation : Google Sites
 
 # Hasil dan Pembahasan
-## Tampilan
-### Index
-### Info Restro
-### Profil
-### Add Resto
 ## Use Case Diagram
 ![EzEats-Use Case Diagram](https://user-images.githubusercontent.com/65725044/121937612-0ee9c080-cd75-11eb-8a9b-fb706cb335f7.png)
 ## Use Case Description
